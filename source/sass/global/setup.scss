@@ -1,0 +1,58 @@
+@use "../sass/mixins/media.scss" as m;
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+ul {
+  list-style-type: none;
+}
+
+dl {
+  margin: 0;
+}
+
+.container {
+  max-width: 284px;
+  margin: 0 auto;
+  width: 100%;
+
+  @include m.tablet {
+    max-width: 708px;
+  }
+
+  @include m.desktop {
+    max-width: 1220px;
+  }
+
+}

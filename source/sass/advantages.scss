@@ -1,0 +1,12 @@
+@use "../sass/mixins/media.scss"as m;
+
+.title-main {
+  color: #000;
+  text-align: center;
+  font-family: inherit;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
+}
