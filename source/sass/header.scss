@@ -3,6 +3,7 @@
 .main-header {
   background-color: transparent;
   position: relative;
+  display: flex;
 }
 
 .main-nav__list {
@@ -12,6 +13,8 @@
 
 .main-nav__item {
   padding: 17px 12px;
+  text-align: center;
+  box-shadow: 0px 1px 0px 0px rgba(1, 1, 1, 0.20), 0px 1px 0px 0px rgba(255, 255, 255, 0.20) inset;
 }
 
 .main-nav__item-link {
@@ -30,9 +33,28 @@
   top: 100%;
   width: 100%;
   background: #81B3D2;
-  box-shadow: 0px 1px 0px 0px rgba(1, 1, 1, 0.20), 0px 1px 0px 0px rgba(255, 255, 255, 0.20) inset;
   z-index: 3;
   display: none;
   left: 0;
-  top: 65px;
+  top: 0;
+}
+
+.main-header__logo {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.main-header__button {
+  display: block;
+  background-image: url("../img/icons/button-menu.svg");
+  width: 23px;
+  height: 22px;
+  border: none;
+  background-color: #ffffff;
+  padding: 17px 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-left: 279px;
 }

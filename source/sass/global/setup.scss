@@ -5,6 +5,12 @@ html {
   box-sizing: border-box;
 }
 
+:root {
+  --basic-white: #ffffff;
+  --blue: #81b3d2;
+  --white: #ffffff;
+}
+
 *,
 *::after,
 *::before {
@@ -36,6 +42,7 @@ a {
 
 ul {
   list-style-type: none;
+  padding: 0;
 }
 
 dl {
