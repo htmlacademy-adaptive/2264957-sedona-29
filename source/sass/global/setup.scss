@@ -1,20 +1,41 @@
-@use "../sass/mixins/media.scss" as m;
+@use "../sass/mixins/media.scss"as m;
 
 html {
   height: 100%;
   box-sizing: border-box;
 }
 
+.page {
+  @include m.desktop {
+    background-color: #f2f2f2;
+    padding: 0 40px;
+  }
+}
+
 :root {
   --basic-white: #ffffff;
   --blue: #81b3d2;
   --white: #ffffff;
+  --grey: #f2f2f2;
 }
 
 *,
 *::after,
 *::before {
   box-sizing: inherit;
+}
+
+.site-button {
+  color: #ffffff;
+  text-align: center;
+  font-family: inherit;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
+  background-color: #81b3d2;
+  border: none;
 }
 
 
@@ -53,13 +74,5 @@ dl {
   max-width: 284px;
   margin: 0 auto;
   width: 100%;
-
-  @include m.tablet {
-    max-width: 708px;
-  }
-
-  @include m.desktop {
-    max-width: 1220px;
-  }
 
 }

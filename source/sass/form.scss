@@ -1,0 +1,141 @@
+@use "../sass/mixins/media.scss"as m;
+
+
+.form__about-title::before {
+  content: "";
+  display: block;
+  border-bottom: 1px solid #e5e5e5e5;
+  width: 100%;
+  top: 0;
+  left: 0;
+  margin-bottom: 25px;
+}
+
+.form__about-title {
+  margin-bottom: 20px;
+}
+
+.form__about {
+  position: relative;
+  margin: 0;
+  border: none;
+  padding: 0;
+}
+
+.form__about-item-name {
+  color: #333333;
+  font-family: inherit;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.form__about-list {
+  margin: 0;
+  padding: 0;
+}
+
+.input-all {
+  border: 1px solid #e7e7e7;
+  width: 100%;
+  color: #000000;
+  font-family: inherit;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px;
+  background-color: #f2f2f2;
+  display: flex;
+  padding: 16px;
+  align-items: flex-start;
+  gap: 10px;
+  align-self: stretch;
+}
+
+
+.form__about-item {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 30px;
+}
+
+.control-label {
+  color: #000000;
+  font-family: inherit;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+.control {
+  position: relative;
+  display: block;
+  padding-left: 58px;
+}
+
+.control-mark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 46px;
+  height: 46px;
+  background-color: var(--grey);
+}
+
+.control-mark-radio {
+  border-radius: 50%;
+}
+
+.control-input[type="radio"]:checked+.control-mark-radio::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background-color: #000000;
+  content: "";
+}
+
+.control-input[type="checkbox"]:checked+.control-mark {
+  background-image: url("../img/icons/check-mark.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 46px;
+  height: 46px;
+  border: none;
+}
+
+.form__about-item-control {
+  margin-bottom: 30px;
+}
+
+.about-input-comment {
+  padding-bottom: 50px;
+  border: none;
+}
+
+.form__button {
+  margin-top: 56px;
+  padding: 16px 49px;
+  width: 100%;
+}
+
+.form__legend {
+  display: block;
+  color: rgba(51, 51, 51, 0.60);
+  text-align: right;
+  font-family: inherit;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+
+

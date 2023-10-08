@@ -1,0 +1,45 @@
+
+@use "../sass/mixins/media.scss" as m;
+
+
+.page__footer-wrapper {
+  padding: 0 82px 33px 82px;
+
+  @include m.tablet {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 36px 60px;
+  }
+}
+
+.page__footer-hash {
+  margin-top: 33px;
+  margin-bottom: 30px;
+
+
+  @include m.tablet {
+    margin: 0;
+  }
+}
+
+.social {
+  display: flex;
+  margin-bottom: 30px;
+
+  @include m.tablet {
+    margin: 0;
+  }
+}
+
+.social__link {
+  padding: 12px 12px;
+  background-color: var(--blue);
+  display: block;
+  width: 48px;
+  height: 48px;
+}
+
+.social__link:not(:last-child) {
+  margin-right: 5px;
+}

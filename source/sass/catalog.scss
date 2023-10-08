@@ -1,0 +1,86 @@
+@use "../sass/mixins/media.scss"as m;
+
+.catalog__title {
+  margin-bottom: 35px;
+}
+
+.catalog__description {
+  margin-bottom: 25px;
+}
+
+.catalog__item::before {
+  content: "";
+  display: block;
+  border-bottom: 1px solid #e5e5e5;
+  width: 100%;
+  top: 0;
+  left: 0;
+  margin-bottom: 25px;
+}
+
+.catalog__item {
+  margin: 0;
+}
+
+.catalog__description-image {
+  color: #000000;
+  font-family: inherit;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 21px;
+  text-transform: uppercase;
+  margin-top: 10px;
+  margin-bottom: 11px;
+}
+
+.catalog__description-image-author {
+  display: block;
+  color: #333333;
+  font-family: inherit;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 18px;
+}
+
+.catalog__item-button-quantity {
+  color: #000000;
+  font-family: PT Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+
+.catalog__item-button {
+  border: none;
+  background-color: #ffffff;
+  margin-bottom: 25px;
+}
+
+.catalog__item-description-title {
+  margin-bottom: 35px;
+}
+
+.catalog__item-description-video {
+  margin-bottom: 33px;
+  width: 266px;
+}
+
+.catalog__item-bottom {
+  position: relative;
+}
+
+.catalog__item-video-button {
+  position: absolute;
+  background-image: url("../img/icons/video-button.png");
+  width: 48px;
+  height: 54px;
+  top: 243px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: transparent;
+  border: none;
+}

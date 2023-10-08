@@ -1,0 +1,32 @@
+@use "../sass/mixins/media.scss" as m;
+
+.booking__title {
+  margin-top: 38px;
+  margin-bottom: 32px;
+}
+
+.booking__paragraph {
+  margin-bottom: 32px;
+}
+
+.booking__button {
+  display: block;
+  padding: 10px 10px;
+  width: 100%;
+  margin-bottom: 49px;
+}
+
+.booking__map {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+  height: 350px;
+}
+
+.booking-wrapper {
+  margin: 0 auto;
+
+  @include m.tablet {
+    width: 435px;
+  }
+}

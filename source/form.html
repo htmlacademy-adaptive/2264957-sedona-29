@@ -3,8 +3,14 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.css">
+  <script src="./js/main.js" defer></script>
+  <link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon.png">
+  <link rel="icon" href="./favicon.ico">
+  <link rel="icon" href="./img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="manifest" href="./img/favicons/manifest.webmanifest">
 </head>
 
 <body class="page__body no-js">
@@ -12,8 +18,8 @@
     <!-- Навигация -->
     <div class="main-header__wrapper">
       <a class="main-header__logo" href="#">
-        <img class="main-header__logo-image" src="img/logo/logo-sedona.svg" width="100" height="83"
-          alt="Логотип кота продукции кэт енерджи">
+        <img class="main-header__logo-image" src="img/logo/logo-sedona.svg" width="185" height="96"
+          alt="Логотип Седона">
       </a>
       <button class="main-header__button" type="button"><span class="visually-hidden">Открыть меню</span></button>
     </div>
@@ -21,7 +27,7 @@
       <div class="main-nav__wrapper">
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a class="main-nav__item-link main-nav__item-link-main main-nav__item-link--current" href="#">
+            <a class="main-nav__item-link main-nav__item-link-main main-nav__item-link--current" href="index.html">
               Главная
             </a>
           </li>
@@ -50,12 +56,16 @@
 
     <h1 class="visually-hidden">Курорт Седона</h1>
     <!-- Отзыв -->
+    <section class="hero hero-catalog">
+      <h2 class="visually-hidden">Седона</h2>
+      <img class="hero__text" src="img/pictures/sedona.png" width="229" height="39" alt="Надпись Седона">
+    </section>
     <section class="review">
       <div class="review__wrapper">
         <div class="review__container">
           <h2 class="visually-hidden">Форма Для отзыва</h2>
-          <p class="review__title">Оставьте свой отзыв</p>
-          <p class="review__description">
+          <p class="review__title title-main">Оставьте свой отзыв</p>
+          <p class="review__description paragraph-main">
             Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях
           </p>
         </div>
@@ -64,7 +74,7 @@
           <!-- ФИО -->
 
           <fieldset class="form__about">
-            <legend class="form__title">Представьтесь:</legend>
+            <legend class="form__title title-main">Представьтесь:</legend>
             <ul class="form__about-list container">
 
               <li class="form__about-item">
@@ -94,7 +104,7 @@
           <!-- Контакты -->
           <fieldset class="form__about">
             <div class="form__about-wrapper line-mode">
-              <legend class="form__about-title">Контактная информация:</legend>
+              <legend class="form__about-title title-main">Контактная информация:</legend>
             </div>
             <ul class="form__about-list form__about-list-contacts">
 
@@ -118,23 +128,23 @@
 
           <!-- Радиокнопки выбора -->
           <fieldset class="form__about">
-            <legend class="form__about-title">ВАше Общее впечатление:</legend>
+            <legend class="form__about-title title-main">ВАше Общее впечатление:</legend>
             <ul class="form__about-list">
-              <li class="form__about-item">
+              <li class="form__about-item form__about-item-control">
                 <label class="control">
                   <input class="control-input visually-hidden" type="radio" name="programs-group" value="good" checked>
                   <span class="control-mark control-mark-radio"></span>
                   <span class="control-label">Скорее положительное</span>
                 </label>
               </li>
-              <li class="form__about-item">
+              <li class="form__about-item form__about-item-control">
                 <label class="control">
                   <input class="control-input visually-hidden" type="radio" name="programs-group" value="bad">
                   <span class="control-mark control-mark-radio"></span>
                   <span class="control-label">Скорее отрицательное</span>
                 </label>
               </li>
-              <li class="form__about-item">
+              <li class="form__about-item form__about-item-control">
                 <label class="control">
                   <input class="control-input visually-hidden" type="radio" name="programs-group" value="unnow">
                   <span class="control-mark control-mark-radio"></span>
@@ -147,31 +157,31 @@
           <!-- Доболнительная информация чекбокс -->
           <fieldset class="form__about">
 
-            <legend class="form__about-title">посещенные достопримечательности:</legend>
+            <legend class="form__about-title title-main ">посещенные достопримечательности:</legend>
 
             <ul class="form__about-list">
-              <li class="form__about-item">
+              <li class="form__about-item form__about-item-control">
                 <label class="control control-sight">
                   <input class="control-input visually-hidden" type="checkbox" name="bridge" checked>
                   <span class="control-mark"></span>
                   <span class="control-label">Мост Дьявола</span>
                 </label>
               </li>
-              <li class="form__about-item">
+              <li class="form__about-item form__about-item-control">
                 <label class="control control-sight">
                   <input class="control-input visually-hidden" type="checkbox" name="bell" checked>
                   <span class="control-mark"></span>
                   <span class="control-label">Гора-Колокол</span>
                 </label>
               </li>
-              <li class="form__about-item">
+              <li class="form__about-item form__about-item-control">
                 <label class="control control-sight">
                   <input class="control-input visually-hidden" type="checkbox" name="park" checked>
                   <span class="control-mark"></span>
                   <span class="control-label">Слайд-парк</span>
                 </label>
               </li>
-              <li class="form__about-item form-container">
+              <li class="form__about-item form__about-item-control">
                 <label class="control control-sight">
                   <input class="control-input visually-hidden" type="checkbox" name="rocks">
                   <span class="control-mark"></span>
@@ -184,14 +194,14 @@
           <!-- Комментарии -->
           <fieldset class="form__about form__about-comment">
 
-            <legend class="form__about-title form__about-title-comment">Опишите свои эмоции:</legend>
-            <textarea class="about-input-comment input-all" type="text" id="fild-about-comment"
+            <legend class="form__about-title form__about-title-comment title-main">Опишите свои эмоции:</legend>
+            <textarea class="about-input-comment input-all container" type="text" id="fild-about-comment"
               name="fild-about-comment" placeholder="Опишите подробно все свои восторги" required></textarea>
 
           </fieldset>
 
-          <div class="form__about-bottom">
-            <button class="site__button site__button-catalog" type="submit">ОТПРАВИТЬ ОТЗЫВ</button>
+          <div class="form__about-bottom container">
+            <button class="form__button site-button" type="submit">ОТПРАВИТЬ ОТЗЫВ</button>
             <small class="form__legend">
               * — Обязательные поля
             </small>
@@ -226,20 +236,26 @@
     </div>
   </footer>
 
-  <div class="modal modal-non">
-    <p class="modal__title">ЧТО-ТО ПОШЛО НЕ ТАК!</p>
-    <p class="modal__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-    <button class="site__button" type="submit">OK</button>
+  <div class="modal-container">
+
+  <div class="modal modal-none">
+    <p class="modal__title title-main">ЧТО-ТО ПОШЛО НЕ ТАК!</p>
+    <p class="modal__description paragraph-main">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+    <button class="modal__button site-button modal__button-none" type="submit">OK</button>
   </div>
 
   <div class="modal modal-done">
-    <p class="modal__title">Ваш отзыв отправлен!</p>
-    <p class="modal__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам.В ближайшее время мы опубликуем
+    <div class="modal__wrapper-done">
+    <p class="modal__title title-main">Ваш отзыв отправлен!</p>
+    <p class="modal__description paragraph-main">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В&nbsp;ближайшее время мы опубликуем
       его на сайте.</p>
+  </div>
       <div class="modal__wrapper">
-    <button class="site__button" type="submit">ЗАкРЫТЬ ОКНО</button>
+    <button class="modal__button site-button" type="submit">ЗАкРЫТЬ ОКНО</button>
   </div>
   </div>
+
+</div>
 </body>
 
 </html>
