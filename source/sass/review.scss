@@ -6,6 +6,12 @@
 
 .review__description {
   margin-bottom: 28px;
+
+  @include m.tablet {
+    width: 435px;
+    margin: 0 auto;
+    margin-bottom: 108px;
+  }
 }
 
 

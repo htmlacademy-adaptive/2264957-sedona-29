@@ -86,7 +86,22 @@
   }
 }
 
+.advantages-list {
+  margin-top: 31px;
+  margin-bottom: 46px;
+  padding: 0 18px 0 65px;
+
+  @include m.tablet {
+    padding: 0 33px;
+  }
+
+  @include m.desktop {
+    padding: 0 50px;
+  }
+}
+
 .advantages-list__item-title {
+  position: relative;
   text-align: left;
   margin-bottom: 16px;
 
@@ -99,6 +114,10 @@
 .advantages-list__item {
 
   @include m.tablet {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 60px 33px;
   }
 
@@ -131,7 +150,10 @@
 }
 
 .advantages__item-blue {
-  display: flex;
+
+  @include m.tablet {
+    display: flex;
+  }
 }
 
 .advantages__item-list {
@@ -149,5 +171,79 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin: 0;
+  }
+}
+
+.advantages-list__item-title::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: -8px;
+  left: -44px;
+
+  @include m.tablet {
+    position: static;
+    margin-bottom: 26px;
+  }
+}
+
+.advantages-list__item-title-house::before {
+  background-image: url("../img/sprite.svg#house");
+  width: 39px;
+  height: 37px;
+
+  @include m.tablet {
+    width: 77px;
+    height: 72px;
+  }
+
+  @include m.desktop {
+    width: 79px;
+    height: 72px;
+  }
+}
+
+.advantages-list__item-title-food::before {
+  background-image: url("../img/sprite.svg#burger");
+  width: 40px;
+  height: 35px;
+
+  @include m.tablet {
+    width: 80px;
+    height: 68px;
+  }
+
+  @include m.desktop {
+    width: 73px;
+    height: 69px;
+  }
+}
+
+.advantages-list__item-title-present::before {
+  background-image: url("../img/sprite.svg#present");
+  width: 32px;
+  height: 38px;
+  left: -40px;
+
+  @include m.tablet {
+    width: 77px;
+    height: 72px;
+  }
+
+  @include m.desktop {
+    width: 77px;
+    height: 75px;
+  }
+}
+
+.advantages-list__item-description {
+  text-align: left;
+
+  @include m.tablet {
+    text-align: center;
+  }
+
+  @include m.desktop {
+    width: 300px;
   }
 }

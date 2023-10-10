@@ -20,6 +20,10 @@
     padding: 77px 20px 77px 20px;
     margin-bottom: 47px;
   }
+
+  @include m.desktop {
+    margin-bottom: 100px;
+  }
 }
 
 .hero-catalog {
@@ -27,4 +31,19 @@
   height: 158px;
   width: 100%;
   padding: 52px 45px;
+
+  @include m.tablet {
+    background-image: url("../img/background/hero-catalog-tablet.jpg");
+    height: 290px;
+    width: 100%;
+  }
+
+  @include m.desktop {
+    background-image: url("../img/background/hero-desktop.jpg");
+  }
+}
+
+.hero__text-catalog {
+  width: 457px;
+  height: 77px;
 }

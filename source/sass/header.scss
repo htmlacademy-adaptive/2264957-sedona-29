@@ -7,16 +7,27 @@
 }
 
 .main-nav__wrapper {
+
+  @include m.tablet {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  }
+}
+
+.main-header__wrapper {
+  display: flex;
+  padding: 17px 0;
 }
 
 .main-nav__list {
   margin: 0;
   padding: 0;
+
+  @include m.tablet {
   display: flex;
   flex-wrap: wrap;
+  }
 }
 
 .main-nav__item {
@@ -92,6 +103,7 @@
   background-repeat: no-repeat;
   background-position: center;
   margin-left: 279px;
+  z-index: 5;
 
   @include m.tablet {
     display: none;
