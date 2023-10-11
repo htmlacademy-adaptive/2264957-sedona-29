@@ -1,5 +1,4 @@
-
-@use "../sass/mixins/media.scss" as m;
+@use "../sass/mixins/media.scss"as m;
 
 
 .page__footer-wrapper {
@@ -38,6 +37,18 @@
   display: block;
   width: 48px;
   height: 48px;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+  }
+
+  &:active .social__vk-img {
+    opacity: 0.3;
+  }
 }
 
 .social__link:not(:last-child) {
@@ -50,4 +61,24 @@
 
 .page__footer-html-img {
   vertical-align: middle;
+  fill: #000000;
+}
+
+.page__footer-html {
+
+  &:hover {
+    color: #81b3d2;
+  }
+
+  &:hover .page__footer-html-img {
+    fill: #81b3d2;
+  }
+
+  &:active {
+    color: #b3b3b3;
+  }
+
+  &:active .page__footer-html-img {
+    fill: #b3b3b3;
+  }
 }

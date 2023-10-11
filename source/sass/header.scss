@@ -3,7 +3,6 @@
 .main-header {
   background-color: transparent;
   position: relative;
-  display: flex;
 }
 
 .main-nav__wrapper {
@@ -17,7 +16,11 @@
 
 .main-header__wrapper {
   display: flex;
-  padding: 17px 0;
+  padding: 17px 20px;
+
+  @include m.tablet {
+    padding: 0;
+  }
 }
 
 .main-nav__list {
@@ -91,6 +94,7 @@
   top: 0;
   left: 50%;
   transform: translateX(-50%);
+  z-index: 3;
 }
 
 .main-header__button {
@@ -99,10 +103,10 @@
   width: 23px;
   height: 22px;
   border: none;
-  background-color: #ffffff;
+  background-color: transparent;
   background-repeat: no-repeat;
   background-position: center;
-  margin-left: 279px;
+  margin-left: auto;
   z-index: 5;
 
   @include m.tablet {
