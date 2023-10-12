@@ -131,23 +131,25 @@
         </div>
           <!-- Радиокнопки выбора -->
           <fieldset class="form__about">
+            <div class="form__about-wrapper line-mode">
             <legend class="form__about-title title-main">ВАше Общее впечатление:</legend>
-            <ul class="form__about-list">
-              <li class="form__about-item form__about-item-control">
+            </div>
+            <ul class="form__about-list form__about-list-control">
+              <li class="form__about-item form__about-item-control form__about-item-control-radio">
                 <label class="control">
                   <input class="control-input visually-hidden" type="radio" name="programs-group" value="good" checked>
                   <span class="control-mark control-mark-radio"></span>
                   <span class="control-label">Скорее положительное</span>
                 </label>
               </li>
-              <li class="form__about-item form__about-item-control">
+              <li class="form__about-item form__about-item-control form__about-item-control-radio">
                 <label class="control">
                   <input class="control-input visually-hidden" type="radio" name="programs-group" value="bad">
                   <span class="control-mark control-mark-radio"></span>
                   <span class="control-label">Скорее отрицательное</span>
                 </label>
               </li>
-              <li class="form__about-item form__about-item-control">
+              <li class="form__about-item form__about-item-control form__about-item-control-radio">
                 <label class="control">
                   <input class="control-input visually-hidden" type="radio" name="programs-group" value="unnow">
                   <span class="control-mark control-mark-radio"></span>
@@ -162,7 +164,7 @@
 
             <legend class="form__about-title title-main ">посещенные достопримечательности:</legend>
 
-            <ul class="form__about-list">
+            <ul class="form__about-list form__about-list-sight">
               <li class="form__about-item form__about-item-control">
                 <label class="control control-sight">
                   <input class="control-input visually-hidden" type="checkbox" name="bridge" checked>
@@ -218,22 +220,31 @@
   <!-- Подвал -->
   <footer class="page__footer">
     <div class="page__footer-wrapper">
-      <p class="page__footer-hash">#visitSEDONA</p>
+      <p class="page__footer-hash title-main">#visitSEDONA</p>
       <div class="page__footer-social social">
         <a class="social__link social__vk" href="#">
-
+          <svg class="social__vk-img" width="24" height="24">
+            <use xlink href="./img/sprite.svg#vk"></use>
+          </svg>
           <span class="visually-hidden">В контакте</span>
         </a>
         <a class="social__link social__tg" href="#">
-
+          <svg class="social__vk-img" width="24" height="24">
+            <use xlink href="./img/sprite.svg#telegram"></use>
+          </svg>
           <span class="visually-hidden">Телеграм</span>
         </a>
         <a class="social__link social__yt" href="#">
-
+          <svg class="social__vk-img" width="24" height="24">
+            <use xlink href="./img/sprite.svg#youtube"></use>
+          </svg>
           <span class="visually-hidden">Ютуб</span>
         </a>
       </div>
-      <a class="page__footer-html">Разработано
+      <a class="page__footer-html paragraph-main">Разработано
+        <svg class="page__footer-html-img" width="27" height="34">
+          <use xlink href="./img/sprite.svg#htmlacademy"></use>
+        </svg>
         <span class="visually-hidden">Разработано html academy</span>
       </a>
     </div>

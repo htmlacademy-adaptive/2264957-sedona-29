@@ -126,6 +126,11 @@
   font-weight: 700;
   line-height: 21px;
   text-transform: uppercase;
+  margin-left: 5px;
+
+  @include m.tablet {
+    margin-left: 9px;
+  }
 
   @include m.desktop {
     color: #ffffff;
@@ -137,6 +142,22 @@
   background-color: #ffffff;
   margin-bottom: 25px;
   padding: 0;
+  display: flex;
+  align-items: flex-end;
+
+  &::before {
+    content: "";
+    mask-image: url("../img/sprite.svg#like");
+    width: 23px;
+    height: 21px;
+    flex-shrink: 0;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.3);
+
+    @include m.desktop {
+      background-color: #ffffff;
+    }
+  }
 
   @include m.tablet {
     background-color: transparent;
@@ -197,5 +218,14 @@
 
   @include m.tablet {
     top: 61%;
+  }
+}
+
+.catalog__item-video {
+  width: 100%;
+  height: 177px;
+
+  @include m.tablet {
+    height: 500px;
   }
 }

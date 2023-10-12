@@ -1,5 +1,9 @@
 @use "../sass/mixins/media.scss"as m;
 
+.form {
+  padding: 0 60px;
+}
+
 
 .form__about-title::before {
   content: "";
@@ -16,8 +20,12 @@
   }
 }
 
-.form__about-title {
+.form__about-wrapper {
   margin-bottom: 20px;
+
+  @include m.tablet {
+    margin-bottom: 38px;
+  }
 }
 
 .form__about {
@@ -43,6 +51,12 @@
   padding: 0;
 }
 
+.form__about-list-sight {
+  padding: 0 80px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
 .input-all {
   border: 1px solid #e7e7e7;
   width: 100%;
@@ -62,6 +76,7 @@
 
 
 .form__about-item {
+  position: relative;
   padding-left: 20px;
   padding-right: 20px;
   margin-bottom: 30px;
@@ -116,8 +131,21 @@
   border: none;
 }
 
+.form__about-list-control {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .form__about-item-control {
   margin-bottom: 30px;
+}
+
+.form__about-item-control-radio {
+
+
+  @include m.tablet {
+    margin-right: 49px;
+  }
 }
 
 .about-input-comment {
@@ -144,9 +172,110 @@
 }
 
 .form__wrapper-top {
+  position: relative;
 
   @include m.tablet {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin-bottom: 55px;
   }
+
+  &::before {
+
+    @include m.tablet {
+    content: "";
+    position: absolute;
+    border-left: 1px solid #dbdbdb;
+    height: 100%;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    display: block;
+    }
+  }
+}
+
+.form__about-item-phone {
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 58px;
+    height: 58px;
+    background-color: #e6e6e6;
+    display: block;
+    right: 20px;
+    top: 22px;
+  }
+
+  &::after {
+    position: absolute;
+    mask-image: url("../img/sprite.svg#phone");
+    width: 18px;
+    height: 18px;
+    display: block;
+    mask-repeat: no-repeat;
+    content: "";
+    background-color: #000000;
+    right: 40px;
+    top: 40px;
+  }
+}
+
+.form__about-item-mail {
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 58px;
+    height: 58px;
+    background-color: #e6e6e6;
+    display: block;
+    right: 20px;
+    top: 22px;
+  }
+
+  &::after {
+    position: absolute;
+    mask-image: url("../img/sprite.svg#mail");
+    width: 18px;
+    height: 18px;
+    display: block;
+    mask-repeat: no-repeat;
+    content: "";
+    background-color: #000000;
+    right: 40px;
+    top: 40px;
+  }
+}
+
+.line-mode {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+
+  @include m.tablet {
+    gap: 40px;
+  }
+}
+
+.line-mode::before {
+  content: "";
+
+
+  @include m.tablet {
+    height: 7px;
+    width: calc(50% - 160px);
+    border-bottom: 2px solid #dbdbdb;
+  }
+
+
+}
+
+.line-mode::after {
+  content: "";
+  height: 7px;
+  width: 10px;
+  border-bottom: 2px solid #dbdbdb;
+  flex-grow: 1;
 }
