@@ -144,11 +144,14 @@
           предложения гостиниц в Седоне</p>
         <a class="booking__button site-button" href="form.html">Найти гостинницу</a>
       </div>
+      <div id="map" class="booking__ymap" style="width: 100%"></div>
+      <noscript>
       <picture class="advantages__image-wrapper">
         <source width="768" height="350" srcset="img/maps/map-desktop.jpg" media="(min-width: 1280px)">
         <source width="768" height="350" srcset="img/maps/map-tablet.jpg" media="(min-width: 768px)">
       <img class="booking__map" src="img/maps/map-mobile.jpg.jpg" width="320" height="350" alt="Карта">
       </picture>
+    </noscript>
     </section>
   </main>
   <!-- Подвал -->
@@ -183,6 +186,11 @@
       </a>
     </div>
   </footer>
+
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=e7c66693-e05c-42de-8da5-daaf062d9b85&lang=ru_RU"
+  type="text/javascript">
+</script>
+<script src="./js/map.js" defer></script>
 </body>
 
 </html>

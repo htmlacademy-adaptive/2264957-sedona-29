@@ -1,11 +1,33 @@
 @use "../sass/mixins/media.scss"as m;
 
 .form {
+
+  @include m.tablet {
   padding: 0 60px;
+  }
+
+  @include m.desktop {
+    padding: 0 120px;
+  }
 }
 
+.form__about-title {
+  margin-bottom: 20px;
 
-.form__about-title::before {
+  @include m.tablet {
+    margin-bottom: 38px;
+    width: 310px;
+  }
+}
+
+.form__about-title-line {
+
+  @include m.tablet {
+    margin-bottom: 0;
+  }
+}
+
+.form__about::before {
   content: "";
   display: block;
   border-bottom: 1px solid #e5e5e5e5;
@@ -52,9 +74,19 @@
 }
 
 .form__about-list-sight {
+
+  @include m.tablet {
   padding: 0 80px;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  margin-bottom: 42px;
+  }
+
+  @include m.desktop {
+    padding: 0;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 64px;
+  }
 }
 
 .input-all {
@@ -94,7 +126,7 @@
 .control {
   position: relative;
   display: block;
-  padding-left: 58px;
+  padding: 10px 0 10px 58px;
 }
 
 .control-mark {
@@ -132,12 +164,25 @@
 }
 
 .form__about-list-control {
+
+  @include m.tablet {
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 63px;
+  }
+
+  @include m.desktop {
+    justify-content: space-between;
+  }
 }
 
 .form__about-item-control {
   margin-bottom: 30px;
+
+  @include m.desktop {
+    padding: 0;
+    margin: 0;
+  }
 }
 
 .form__about-item-control-radio {
@@ -146,17 +191,29 @@
   @include m.tablet {
     margin-right: 49px;
   }
+
+  @include m.tablet {
+    margin-right: 29px;
+    justify-content: space-between;
+  }
 }
 
 .about-input-comment {
   padding-bottom: 50px;
   border: none;
+
+  @include m.tablet {
+    padding-bottom: 112px;
+  }
 }
 
 .form__button {
-  margin-top: 56px;
   padding: 16px 49px;
   width: 100%;
+
+  @include m.tablet {
+    width: 324px;
+  }
 }
 
 .form__legend {
@@ -180,6 +237,10 @@
     margin-bottom: 55px;
   }
 
+  @include m.desktop {
+    column-gap: 100px;
+  }
+
   &::before {
 
     @include m.tablet {
@@ -192,6 +253,17 @@
     transform: translateX(-50%);
     display: block;
     }
+  }
+}
+
+.form__about-bottom {
+  margin-top: 53px;
+
+  @include m.tablet {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 64px;
   }
 }
 
@@ -265,7 +337,7 @@
 
   @include m.tablet {
     height: 7px;
-    width: calc(50% - 160px);
+    width: calc(47% - 160px);
     border-bottom: 2px solid #dbdbdb;
   }
 
@@ -273,9 +345,12 @@
 }
 
 .line-mode::after {
+
+  @include m.tablet {
   content: "";
   height: 7px;
   width: 10px;
   border-bottom: 2px solid #dbdbdb;
   flex-grow: 1;
+  }
 }

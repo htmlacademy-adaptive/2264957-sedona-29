@@ -10,6 +10,10 @@
     align-items: center;
     padding: 36px 60px;
   }
+
+  @include m.desktop {
+    padding: 36px 120px;
+  }
 }
 
 .page__footer-hash {
