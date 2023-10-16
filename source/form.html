@@ -14,6 +14,7 @@
 </head>
 
 <body class="page__body no-js">
+  <div class="page__container">
   <header class="main-header">
     <!-- Навигация -->
     <div class="main-header__wrapper">
@@ -77,27 +78,27 @@
 
           <fieldset class="form__about">
 
-            <legend class="form__about-title title-main">Представьтесь:</legend>
+            <h3 class="form__about-title title-main">Представьтесь:</h3>
             <ul class="form__about-list container">
 
               <li class="form__about-item">
                 <label class="form__about-item-name" for="fild-about-name">
                   Имя:*</label>
-                <input class="input-all" type="text" id="fild-about-name" name="fild-about-name" placeholder="Пётр"
+                <input class="form__input-all" type="text" id="fild-about-name" name="fild-about-name" placeholder="Пётр"
                   required>
               </li>
 
               <li class="form__about-item">
                 <label class="form__about-item-name" for="fild-about-surname">
                   ФАМИЛИЯ*:</label>
-                <input class="input-all" type="text" id="fild-about-surname" name="fild-about-weight"
+                <input class="form__input-all" type="text" id="fild-about-surname" name="fild-about-weight"
                   placeholder="Пустота" required>
               </li>
 
               <li class="form__about-item">
                 <label class="form__about-item-name" for="fild-about-dadname">
                   Отчество:</label>
-                <input class="input-all" type="text" id="fild-about-old" name="fild-about-dadname"
+                <input class="form__input-all" type="text" id="fild-about-old" name="fild-about-dadname"
                   placeholder="Викторович" required>
               </li>
 
@@ -107,21 +108,21 @@
           <!-- Контакты -->
           <fieldset class="form__about">
 
-              <legend class="form__about-title title-main">Контактная информация:</legend>
+              <h3 class="form__about-title title-main">Контактная информация:</h3>
 
             <ul class="form__about-list form__about-list-contacts">
 
               <li class="form__about-item form__about-item-phone form-container ">
                 <label class="form__about-item-name" for="fild-about-tel">
                   Контактный телефон*:</label>
-                <input class="about-input-tel input-all" type="tel" id="fild-about-tel" name="fild-about-tel"
+                <input class="form__about-input-tel form__input-all" type="tel" id="fild-about-tel" name="fild-about-tel"
                   placeholder="Введите телефон" required>
               </li>
 
               <li class="form__about-item form__about-item-mail form-container ">
                 <label class="form__about-item-name" for="fild-about-mail">
                   Электронная почта*:</label>
-                <input class="about-input-mail input-all" type="email" id="fild-about-mail" name="fild-about-mail"
+                <input class="form__about-input-mail form__input-all" type="email" id="fild-about-mail" name="fild-about-mail"
                   placeholder="Введите e-mail" required>
               </li>
 
@@ -131,29 +132,29 @@
         </div>
           <!-- Радиокнопки выбора -->
           <fieldset class="form__about">
-            <div class="form__about-wrapper line-mode">
-            <legend class="form__about-title form__about-title-line title-main">ВАше Общее впечатление:</legend>
+            <div class="form__about-wrapper form__line-mode">
+            <h3 class="form__about-title form__about-title-line title-main">ВАше Общее впечатление:</h3>
             </div>
             <ul class="form__about-list form__about-list-control">
               <li class="form__about-item form__about-item-control form__about-item-control-radio">
-                <label class="control">
-                  <input class="control-input visually-hidden" type="radio" name="programs-group" value="good" checked>
-                  <span class="control-mark control-mark-radio"></span>
-                  <span class="control-label">Скорее положительное</span>
+                <label class="form__control">
+                  <input class="form__control-input visually-hidden" type="radio" name="programs-group" value="good" checked>
+                  <span class="form__control-mark forn__control-mark-radio"></span>
+                  <span class="form__control-label">Скорее положительное</span>
                 </label>
               </li>
               <li class="form__about-item form__about-item-control form__about-item-control-radio">
-                <label class="control">
-                  <input class="control-input visually-hidden" type="radio" name="programs-group" value="bad">
-                  <span class="control-mark control-mark-radio"></span>
-                  <span class="control-label">Скорее отрицательное</span>
+                <label class="form__control">
+                  <input class="form__control-input visually-hidden" type="radio" name="programs-group" value="bad">
+                  <span class="form__control-mark form__control-mark-radio"></span>
+                  <span class="form__control-label">Скорее отрицательное</span>
                 </label>
               </li>
               <li class="form__about-item form__about-item-control form__about-item-control-radio">
-                <label class="control">
-                  <input class="control-input visually-hidden" type="radio" name="programs-group" value="unnow">
-                  <span class="control-mark control-mark-radio"></span>
-                  <span class="control-label">Затрудняюсь ответить</span>
+                <label class="form__control">
+                  <input class="form__control-input visually-hidden" type="radio" name="programs-group" value="unnow">
+                  <span class="form__control-mark control-mark-radio"></span>
+                  <span class="form__control-label">Затрудняюсь ответить</span>
                 </label>
               </li>
             </ul>
@@ -161,36 +162,36 @@
 
           <!-- Доболнительная информация чекбокс -->
           <fieldset class="form__about">
-            <div class="form__about-wrapper line-mode">
-            <legend class="form__about-title title-main form__about-title-line">посещенные достопримечательности:</legend>
+            <div class="form__about-wrapper form__line-mode">
+            <h3 class="form__about-title title-main form__about-title-line">посещенные достопримечательности:</h3>
             </div>
             <ul class="form__about-list form__about-list-sight">
               <li class="form__about-item form__about-item-control">
-                <label class="control control-sight">
-                  <input class="control-input visually-hidden" type="checkbox" name="bridge" checked>
-                  <span class="control-mark"></span>
-                  <span class="control-label">Мост Дьявола</span>
+                <label class="form__control form__control-sight">
+                  <input class="form__control-input visually-hidden" type="checkbox" name="bridge" checked>
+                  <span class="form__control-mark"></span>
+                  <span class="form__control-label">Мост Дьявола</span>
                 </label>
               </li>
               <li class="form__about-item form__about-item-control">
-                <label class="control control-sight">
-                  <input class="control-input visually-hidden" type="checkbox" name="bell" checked>
-                  <span class="control-mark"></span>
-                  <span class="control-label">Гора-Колокол</span>
+                <label class="form__control form__control-sight">
+                  <input class="form__control-input visually-hidden" type="checkbox" name="bell" checked>
+                  <span class="form__control-mark"></span>
+                  <span class="form__control-label">Гора-Колокол</span>
                 </label>
               </li>
               <li class="form__about-item form__about-item-control">
-                <label class="control control-sight">
-                  <input class="control-input visually-hidden" type="checkbox" name="park" checked>
-                  <span class="control-mark"></span>
-                  <span class="control-label">Слайд-парк</span>
+                <label class="form__control form__control-sight">
+                  <input class="form__control-input visually-hidden" type="checkbox" name="park" checked>
+                  <span class="form__control-mark"></span>
+                  <span class="form__control-label">Слайд-парк</span>
                 </label>
               </li>
               <li class="form__about-item form__about-item-control">
-                <label class="control control-sight">
-                  <input class="control-input visually-hidden" type="checkbox" name="rocks">
-                  <span class="control-mark"></span>
-                  <span class="control-label">Красные скалы</span>
+                <label class="form__control form__control-sight">
+                  <input class="form__control-input visually-hidden" type="checkbox" name="rocks">
+                  <span class="form__control-mark"></span>
+                  <span class="form__control-label">Красные скалы</span>
                 </label>
               </li>
             </ul>
@@ -198,10 +199,10 @@
 
           <!-- Комментарии -->
           <fieldset class="form__about form__about-comment">
-            <div class="form__about-wrapper line-mode">
-            <legend class="form__about-title form__about-title-comment form__about-title-line title-main">Опишите свои эмоции:</legend>
+            <div class="form__about-wrapper form__line-mode">
+            <h3 class="form__about-title form__about-title-comment form__about-title-line title-main">Опишите свои эмоции:</h3>
             </div>
-            <textarea class="about-input-comment input-all container" type="text" id="fild-about-comment"
+            <textarea class="form__about-input-comment form__input-all container" type="text" id="fild-about-comment"
               name="fild-about-comment" placeholder="Опишите подробно все свои восторги" required></textarea>
 
           </fieldset>
@@ -271,6 +272,7 @@
   </div>
 
 </div>
+  </div>
 </body>
 
 </html>

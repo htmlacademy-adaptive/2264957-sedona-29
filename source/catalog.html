@@ -14,6 +14,7 @@
 </head>
 
 <body class="page__body no-js">
+  <div class="page__container">
   <header class="main-header">
     <!-- Навигация -->
     <div class="main-header__wrapper">
@@ -67,12 +68,14 @@
       <div class="catalog__list">
         <figure class="catalog__item catalog__item-view">
           <div class="catalog__item-wrapper container">
+            <div class="catalog__item-wrapper-image">
             <picture class="catalog__item-picture">
               <source width="1200" height="400" srcset="img/catalog/view-desktop.jpg" media="(min-width: 1280px)">
               <source width="648" height="400" srcset="img/catalog/view-tablet.jpg" media="(min-width: 768px)">
               <img class="catalog__item-picture" src="img/catalog/catalog-view.jpg" width="280" height="280"
                 alt="Дорога в закате">
             </picture>
+          </div>
             <div class="catalog__description-image-wrapper">
               <figcaption class="catalog__description-image">неродные просторы<span
                   class="catalog__description-image-author">Автор фото: Борис</span></figcaption>
@@ -87,12 +90,14 @@
         </figure>
         <figure class="catalog__item">
           <div class="catalog__item-wrapper container">
+            <div class="catalog__item-wrapper-image">
             <picture class="catalog__item-picture">
               <source width="400" height="267" srcset="img/catalog/plants-desktop.jpg" media="(min-width: 1280px)">
               <source width="324" height="267" srcset="img/catalog/plants-tablet.jpg" media="(min-width: 768px)">
               <img class="catalog__item-picture" src="img/catalog/catalog-plants.jpg" width="280" height="280"
                 alt="Растение в пустыне">
             </picture>
+            </div>
             <div class="catalog__description-image-wrapper">
               <figcaption class="catalog__description-image">Местная растительность<span
                   class="catalog__description-image-author">Автор фото: Сергей</span></figcaption>
@@ -107,12 +112,14 @@
         </figure>
         <figure class="catalog__item">
           <div class="catalog__item-wrapper container">
+            <div class="catalog__item-wrapper-image">
             <picture class="catalog__item-picture">
               <source width="400" height="267" srcset="img/catalog/road-desktop.jpg" media="(min-width: 1280px)">
               <source width="324" height="267" srcset="img/catalog/road-tablet.jpg" media="(min-width: 768px)">
               <img class="catalog__item-picture" src="img/catalog/catalog-road.jpg" width="280" height="280"
                 alt="Растение в пустыне">
             </picture>
+            </div>
             <div class="catalog__description-image-wrapper">
               <figcaption class="catalog__description-image">Дорога на север<span
                   class="catalog__description-image-author">Автор фото: Петр</span></figcaption>
@@ -127,6 +134,7 @@
         </figure>
         <figure class="catalog__item">
           <div class="catalog__item-wrapper container">
+            <div class="catalog__item-wrapper-image">
             <picture class="catalog__item-picture">
               <source width="400" height="267" srcset="img/catalog/catalog-bridge-desktop.jpg"
                 media="(min-width: 1280px)">
@@ -135,6 +143,7 @@
               <img class="catalog__item-picture" src="img/catalog/catalog-bridge.jpg" width="280" height="280"
                 alt="Растение в пустыне">
             </picture>
+            </div>
             <div class="catalog__description-image-wrapper">
               <figcaption class="catalog__description-image">Мост дьявола<span
                   class="catalog__description-image-author">Автор фото: Антон</span></figcaption>
@@ -152,7 +161,7 @@
             <figcaption class="catalog__item-description-title title-main">Все еще сомневаетесь?</figcaption>
             <figcaption class="catalog__item-description-video paragraph-main">Смотрите видеопрезентацию и скорее за
               билетами, пока они не подорожали в очередной раз!</figcaption>
-            <picture class="catalog__item-picture">
+            <picture class="catalog__item-video">
               <source width="1200" height="400" srcset="img/catalog/video-desktop.jpg" media="(min-width: 1280px)">
               <source width="648" height="400" srcset="img/catalog/video-tablet.jpg" media="(min-width: 768px)">
               <img class="catalog__item-video" src="./img/catalog/video-mobile.jpg.jpg" width="280" height="177" alt="Видео презентация
@@ -198,6 +207,7 @@
       </a>
     </div>
   </footer>
+  </div>
 </body>
 
 </html>

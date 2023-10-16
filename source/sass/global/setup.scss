@@ -1,16 +1,28 @@
 @use "../sass/mixins/media.scss"as m;
 
+
+body {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  color: #000000;
+  background-color: #ffffff;
+
+
+  @include m.desktop {
+    background-color: #f2f2f2;
+  }
+}
+
 html {
   height: 100%;
   box-sizing: border-box;
 }
 
-.page {
-  @include m.desktop {
-    background-color: #f2f2f2;
-    padding: 0 40px;
-  }
-}
 
 :root {
   --basic-white: #ffffff;
@@ -36,6 +48,42 @@ html {
   text-transform: uppercase;
   background-color: #81b3d2;
   border: none;
+}
+
+.title-main {
+  color: #000;
+  text-align: center;
+  font-family: inherit;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
+  margin: 0;
+
+  &--white {
+    color:#ffffff;
+  }
+
+  @include m.tablet {
+    font-size: 21px;
+  }
+}
+
+.paragraph-main {
+  color: #333333;
+  text-align: center;
+  font-family: inherit;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  text-transform: uppercase;
+  margin: 0;
+
+  &--white {
+    color:#ffffff;
+  }
 }
 
 
@@ -70,10 +118,21 @@ dl {
   margin: 0;
 }
 
+.page__container {
+  min-width: 320px;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  @include m.desktop {
+    box-shadow: 0px 5px 15px 0px rgba(0, 1, 1, 0.20);
+    background-color: #ffffff;
+  }
+
+}
+
 .container {
   padding: 0 20px;
   margin: 0 auto;
-  width: 100%;
 
   @include m.tablet {
     padding: 0;

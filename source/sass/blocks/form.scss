@@ -89,7 +89,7 @@
   }
 }
 
-.input-all {
+.form__input-all {
   border: 1px solid #e7e7e7;
   width: 100%;
   color: #000000;
@@ -114,7 +114,7 @@
   margin-bottom: 30px;
 }
 
-.control-label {
+.form__control-label {
   color: #000000;
   font-family: inherit;
   font-size: 18px;
@@ -123,13 +123,13 @@
   line-height: 26px;
 }
 
-.control {
+.form__control {
   position: relative;
   display: block;
   padding: 10px 0 10px 58px;
 }
 
-.control-mark {
+.form__control-mark {
   position: absolute;
   top: 0;
   left: 0;
@@ -138,11 +138,11 @@
   background-color: var(--grey);
 }
 
-.control-mark-radio {
+.form__control-mark-radio {
   border-radius: 50%;
 }
 
-.control-input[type="radio"]:checked+.control-mark-radio::after {
+.form__control-input[type="radio"]:checked+.control-mark-radio::after {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -154,7 +154,7 @@
   content: "";
 }
 
-.control-input[type="checkbox"]:checked+.control-mark {
+.form__control-input[type="checkbox"]:checked+.control-mark {
   background-image: url("../img/icons/check-mark.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -198,7 +198,7 @@
   }
 }
 
-.about-input-comment {
+.form__about-input-comment {
   padding-bottom: 50px;
   border: none;
 
@@ -321,7 +321,7 @@
   }
 }
 
-.line-mode {
+.form__line-mode {
   display: flex;
   gap: 20px;
   align-items: center;
@@ -331,7 +331,7 @@
   }
 }
 
-.line-mode::before {
+.form__line-mode::before {
   content: "";
 
 
@@ -344,7 +344,7 @@
 
 }
 
-.line-mode::after {
+.form__line-mode::after {
 
   @include m.tablet {
   content: "";

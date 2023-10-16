@@ -120,7 +120,7 @@
 
 .catalog__item-button-quantity {
   color: #000000;
-  font-family: PT Sans;
+  font-family: inherit;
   font-size: 14px;
   font-style: normal;
   font-weight: 700;
@@ -167,6 +167,13 @@
 
 .catalog__item-picture {
   display: block;
+  width: 100%;
+  object-fit: cover;
+  max-height: 280px;
+
+  @include m.tablet {
+    max-height: 400px;
+  }
 }
 
 .catalog__item-description-title {
@@ -228,4 +235,8 @@
   @include m.tablet {
     height: 500px;
   }
+}
+
+.catalog__item-wrapper-image {
+  width: 100%;
 }
