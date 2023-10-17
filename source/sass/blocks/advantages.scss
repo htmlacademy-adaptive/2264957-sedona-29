@@ -36,6 +36,10 @@
 
   &--blue::after {
     color: #ffffff;
+
+    @include m.desktop {
+      top: 200%;
+    }
   }
 
   @include m.tablet {
@@ -140,7 +144,7 @@
     }
   }
 
-  &--rewerse {
+  &--reverse {
 
     @include m.tablet {
       display: flex;
@@ -171,6 +175,7 @@
 
 .advantages__paragraph {
   position: relative;
+  margin: 0 auto;
   margin-bottom: 20px;
 
   &::after {

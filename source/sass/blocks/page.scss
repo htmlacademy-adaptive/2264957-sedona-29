@@ -1,0 +1,28 @@
+@use "../sass/mixins/media.scss"as m;
+
+
+.page__footer-wrapper {
+  padding: 0 82px 33px 82px;
+
+  @include m.tablet {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 36px 60px;
+  }
+
+  @include m.desktop {
+    padding: 36px 120px;
+  }
+}
+
+.page__footer-hash {
+  margin-top: 33px;
+  margin-bottom: 30px;
+
+
+  @include m.tablet {
+    margin: 0;
+  }
+}
+

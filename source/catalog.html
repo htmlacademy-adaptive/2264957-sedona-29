@@ -18,7 +18,7 @@
   <header class="main-header">
     <!-- Навигация -->
     <div class="main-header__wrapper">
-      <a class="main-header__logo" href="#">
+      <a class="main-header__logo" href="index.html">
         <img class="main-header__logo-image" src="img/logo/logo-sedona.svg" width="185" height="96"
           alt="Логотип Седона">
       </a>
@@ -28,12 +28,12 @@
       <div class="main-nav__wrapper">
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a class="main-nav__item-link main-nav__item-link-main main-nav__item-link--current" href="index.html">
+            <a class="main-nav__item-link main-nav__item-link-main" href="index.html">
               Главная
             </a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__item-link" href="catalog.html">
+            <a class="main-nav__item-link main-nav__item-link--current" href="catalog.html">
               Фото и видео
             </a>
           </li>
@@ -58,7 +58,7 @@
     <!-- Каталог -->
     <section class="hero hero-catalog">
       <h2 class="visually-hidden">Седона</h2>
-      <img class="hero__text hero__text-catalog" src="img/pictures/sedona.png" width="229" height="39" alt="Надпись Седона">
+      <img class="hero__text hero__text-catalog" src="img/pictures/sedona-text.svg" width="229" height="39" alt="Надпись Седона">
     </section>
     <section class="catalog">
       <h2 class="catalog__title title-main">Фото и видео</h2>
@@ -156,22 +156,23 @@
             </div>
           </div>
         </figure>
-        <figure class="catalog__item catalog__item-bottom">
-          <div class="catalog__item-wrapper container">
-            <figcaption class="catalog__item-description-title title-main">Все еще сомневаетесь?</figcaption>
-            <figcaption class="catalog__item-description-video paragraph-main">Смотрите видеопрезентацию и скорее за
-              билетами, пока они не подорожали в очередной раз!</figcaption>
-            <picture class="catalog__item-video">
-              <source width="1200" height="400" srcset="img/catalog/video-desktop.jpg" media="(min-width: 1280px)">
-              <source width="648" height="400" srcset="img/catalog/video-tablet.jpg" media="(min-width: 768px)">
-              <img class="catalog__item-video" src="./img/catalog/video-mobile.jpg.jpg" width="280" height="177" alt="Видео презентация
-          ">
-            </picture>
-            <button class="catalog__item-video-button" type="button">
-              <span class="visually-hidden">Включить видео</span>
-            </button>
-          </div>
-        </figure>
+      </div>
+
+      <div class="catalog__item catalog__item-bottom">
+        <div class="catalog__item-wrapper container">
+          <p class="catalog__item-description-title title-main">Все еще сомневаетесь?</p>
+          <p class="catalog__item-description-video paragraph-main">Смотрите видеопрезентацию и скорее за
+            билетами, пока они не подорожали в очередной раз!</p>
+          <picture class="catalog__item-video">
+            <source width="1200" height="400" srcset="img/catalog/video-desktop.jpg" media="(min-width: 1280px)">
+            <source width="648" height="400" srcset="img/catalog/video-tablet.jpg" media="(min-width: 768px)">
+            <img class="catalog__item-video" src="./img/catalog/video-mobile.jpg.jpg" width="280" height="177" alt="Видео презентация
+        ">
+          </picture>
+          <button class="catalog__item-video-button" type="button">
+            <span class="visually-hidden">Включить видео</span>
+          </button>
+        </div>
       </div>
     </section>
   </main>
