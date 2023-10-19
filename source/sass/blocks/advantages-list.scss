@@ -1,15 +1,18 @@
-@use "../sass/mixins/media.scss"as m;
-
-
 
 
 .advantages-list {
+  @include list;
   margin-top: 31px;
   margin-bottom: 46px;
   padding: 0 18px 0 65px;
 
-  @include m.tablet {
+  @include tablet {
     padding: 0;
+  }
+
+  @include desktop {
+    margin-top: 0;
+    margin-bottom: 20px;
   }
 }
 
@@ -18,7 +21,7 @@
   text-align: left;
   margin-bottom: 16px;
 
-  @include m.tablet {
+  @include tablet {
     text-align: center;
     margin-bottom: 26px;
   }
@@ -26,7 +29,7 @@
 
 .advantages-list__item {
 
-  @include m.tablet {
+  @include tablet {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -34,15 +37,15 @@
     padding: 60px 33px;
   }
 
-  @include m.desktop {
-    padding: 71px 17px;
+  @include desktop {
+    padding: 47px 17px;
   }
 }
 
 .advantages-list__item:not(:last-child) {
-  margin-bottom: 25px;
+  margin-bottom: 33px;
 
-  @include m.tablet {
+  @include tablet {
     margin: 0;
   }
 }
@@ -53,9 +56,9 @@
   position: absolute;
   display: block;
   top: -8px;
-  left: -44px;
+  left: -47px;
 
-  @include m.tablet {
+  @include tablet {
     position: static;
     margin-bottom: 26px;
     background-position-x: 50%;
@@ -65,14 +68,14 @@
 .advantages-list__item-title-house::before {
   background-image: url("../img/sprite.svg#house");
   width: 39px;
-  height: 37px;
+  height: 39px;
 
-  @include m.tablet {
+  @include tablet {
     width: 77px;
     height: 72px;
   }
 
-  @include m.desktop {
+  @include desktop {
     width: 79px;
     height: 72px;
   }
@@ -81,14 +84,14 @@
 .advantages-list__item-title-food::before {
   background-image: url("../img/sprite.svg#burger");
   width: 40px;
-  height: 35px;
+  height: 39px;
 
-  @include m.tablet {
+  @include tablet {
     width: 80px;
     height: 68px;
   }
 
-  @include m.desktop {
+  @include desktop {
     width: 73px;
     height: 69px;
   }
@@ -96,30 +99,30 @@
 
 .advantages-list__item-title-present::before {
   background-image: url("../img/sprite.svg#present");
-  width: 32px;
-  height: 38px;
-  left: -40px;
+  width: 40px;
+  height: 39px;
 
-  @include m.tablet {
+  @include tablet {
     width: 77px;
     height: 72px;
     width: 100%;
   }
 
-  @include m.desktop {
+  @include desktop {
     width: 77px;
     height: 75px;
+    width: 100%;
   }
 }
 
 .advantages-list__item-description {
   text-align: left;
 
-  @include m.tablet {
+  @include tablet {
     text-align: center;
   }
 
-  @include m.desktop {
+  @include desktop {
     width: 300px;
   }
 }

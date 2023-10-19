@@ -12,12 +12,14 @@
   }
 
   @include m.desktop {
-    padding: 36px 120px;
+    padding: 56px 120px;
   }
 }
 
 .page__footer-hash {
-  margin-top: 33px;
+  font-size: 21px;
+  line-height: 26px;
+  margin-top: 42px;
   margin-bottom: 30px;
 
 

@@ -1,4 +1,3 @@
-@use "../sass/mixins/media.scss"as m;
 
 
 
@@ -6,15 +5,20 @@
   margin: 0 auto;
   margin-bottom: 36px;
 
-  @include m.tablet {
+  @include tablet {
     font-size: 21px;
     line-height: 26px;
+  }
+
+  @include desktop {
+    margin-bottom: 27px;
   }
 }
 
 .advantages__item-title {
+  @include list;
   margin: 0 auto;
-  margin-bottom: 46px;
+  margin-bottom: 49px;
   position: relative;
 
   &::after {
@@ -28,8 +32,8 @@
     line-height: 21px;
     text-transform: uppercase;
     counter-increment: advantages;
-    content: "- №"counter(advantages)" -";
-    top: 120%;
+    content: "— №"counter(advantages)" —";
+    top: 143%;
     left: 50%;
     transform: translateX(-50%);
   }
@@ -37,23 +41,24 @@
   &--blue::after {
     color: #ffffff;
 
-    @include m.desktop {
-      top: 200%;
+    @include desktop {
+      top: 124%;
+      width: 150px;
     }
   }
 
-  @include m.tablet {
+  @include tablet {
     margin-bottom: 58px;
   }
 
-  @include m.desktop {
-    margin-bottom: 83px;
+  @include desktop {
+    margin-bottom: 57px;
   }
 }
 
 .advantages__item-list {
 
-  @include m.tablet {
+  @include tablet {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin: 0;
@@ -61,15 +66,16 @@
 }
 
 .advantages__title-top {
+  width: 284px;
 
-  @include m.tablet {
+  @include tablet {
     width: 520px;
   }
 }
 
 .advantages__title-bottom {
 
-  @include m.tablet {
+  @include tablet {
   width: 145px;
   }
 }
@@ -82,36 +88,60 @@
   &--blue {
     background-color: var(--blue);
     padding: 37px 18px;
+    flex-shrink: 0;
 
-    @include m.tablet {
+    @include tablet {
       padding: 52px 33px 31px 33px;
-      width: 256px;
+      width: 400px;
     }
 
-    @include m.desktop {
+    @include desktop {
       padding: 52px 50px 52px 50px;
       width: 400px;
     }
   }
 
+
   &--bottom {
-    @include m.tablet {
+    @include tablet {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       margin: 0;
     }
   }
 
+  &--top {
+    padding: 54px 18px 40px 18px;
+  }
+
+  &--top::before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/icons/advantages-triangle.svg");
+    width: 100%;
+    height: 37px;
+    top: -17px;
+    left: 0;
+    overflow: hidden;
+    background-position: center;
+    background-size: cover;
+    z-index: 3;
+
+    @include tablet {
+      display: none;
+    }
+
+}
 }
 
 
 .advantages__list {
+  @include list;
   counter-reset: advantages;
-  margin: 0;
 
-  @include m.tablet {
+  @include tablet {
     margin: 0;
-    margin-top: 55px;
+    margin-top: 45px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
@@ -130,23 +160,27 @@
   position: relative;
 
   &--blue {
-    @include m.tablet {
+    @include tablet {
       grid-column: 1/4;
     }
   }
 
   &--bottom {
     background-color: #eeeeee;
-    padding: 24px 0;
+    padding: 25px 0;
 
-    @include m.tablet {
+    @include tablet {
       padding: 41px 33px 63px 33px;
+    }
+
+    @include desktop {
+      padding: 52px 50px;
     }
   }
 
   &--reverse {
 
-    @include m.tablet {
+    @include tablet {
       display: flex;
       flex-direction: row-reverse;
     }
@@ -155,7 +189,7 @@
   &--block {
     position: relative;
 
-    @include m.tablet {
+    @include tablet {
       display: flex;
     }
   }
@@ -165,7 +199,7 @@
 
   &--reverse::after {
 
-    @include m.tablet {
+    @include tablet {
       top: 50%;
       left: 83%;
     }
@@ -176,29 +210,39 @@
 .advantages__paragraph {
   position: relative;
   margin: 0 auto;
-  margin-bottom: 20px;
+  margin-bottom: 32px;
+  width: 284px;
 
-  &::after {
-    position: absolute;
-    content: "";
-    background-image: url("../img/icons/advantages-triangle.svg");
+  @include tablet {
     width: 100%;
-    height: 37px;
-    top: 100%;
-    left: 0;
-    overflow: hidden;
-    background-position: center;
-    background-size: cover;
-    z-index: 3;
-
-    @include m.tablet {
-      display: none;
-    }
   }
-
 }
+
+
 
 .advantages__image-wrapper {
   flex-grow: 1;
 }
 
+
+.advantages__description {
+  width: 258px;
+  margin: 0 auto;
+
+  @include desktop {
+    width: 300px;
+  }
+
+  &--center {
+    width: 234px;
+  }
+}
+
+
+.advantages__item-description {
+
+  @include desktop {
+    width: 263px;
+    margin: 0 auto;
+  }
+}

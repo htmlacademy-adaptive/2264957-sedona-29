@@ -37,66 +37,9 @@ html {
   box-sizing: inherit;
 }
 
-.site-button {
-  color: #ffffff;
-  text-align: center;
-  font-family: inherit;
-  font-size: 21px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 26px;
-  text-transform: uppercase;
-  background-color: #81b3d2;
-  border: none;
 
-  &:hover {
-    background-color: #669ec0;
-  }
 
-  &:active {
-    background-color: #5496bd;
-    color: rgba(255, 255, 255, 0.30);
-  }
 
-  &:disabled {
-    background-color: #e5e5e5;
-  }
-}
-
-.title-main {
-  color: #000;
-  text-align: center;
-  font-family: inherit;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 26px;
-  text-transform: uppercase;
-
-  &--white {
-    color:#ffffff;
-  }
-
-  @include m.tablet {
-    font-size: 21px;
-  }
-}
-
-.paragraph-main {
-  color: #333333;
-  text-align: center;
-  font-family: inherit;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 21px;
-  text-transform: uppercase;
-  margin: 0;
-
-  &--white {
-    color:#ffffff;
-  }
-}
 
 
 .visually-hidden {
@@ -120,15 +63,6 @@ a {
   text-decoration: none;
 }
 
-
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-dl {
-  margin: 0;
-}
 
 .page__container {
   min-width: 320px;

@@ -9,8 +9,7 @@
   background-position: center;
   display: flex;
   justify-content: center;
-  align-items: center;
-  margin-bottom: 32px;
+  margin-bottom: 35px;
 
   @include m.tablet {
     background-image: url("../img/background/hero-tablet.jpg");
@@ -23,7 +22,7 @@
   }
 
   @include m.desktop {
-    margin-bottom: 100px;
+    margin-bottom: 60px;
   }
 
   &::after {
@@ -45,7 +44,8 @@
   background-image: url("../img/background/hero-catalog-mobile.jpg");
   height: 158px;
   width: 100%;
-  padding: 52px 45px;
+  padding: 33px 45px;
+  margin-bottom: 38px;
 
   @include m.tablet {
     background-image: url("../img/background/hero-catalog-tablet.jpg");
@@ -58,7 +58,18 @@
   }
 }
 
+
+
+.hero__text {
+  margin-top: 90px;
+
+  @include tablet {
+    margin-top: 0;
+  }
+}
+
 .hero__text-catalog {
   width: 457px;
   height: 77px;
+  margin: 0;
 }

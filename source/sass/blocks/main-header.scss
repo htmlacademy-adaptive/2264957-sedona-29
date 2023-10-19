@@ -1,4 +1,4 @@
-@use "../sass/mixins/media.scss"as m;
+
 
 .main-header {
   background-color: transparent;
@@ -9,7 +9,7 @@
   display: flex;
   padding: 17px 20px;
 
-  @include m.tablet {
+  @include tablet {
     padding: 0;
   }
 }
@@ -23,7 +23,7 @@
   left: 0;
   top: 0;
 
-  @include m.tablet {
+  @include tablet {
     position: static;
     display: block;
     background-color: transparent;
@@ -58,7 +58,7 @@
     opacity: 0.3;
   }
 
-  @include m.tablet {
+  @include tablet {
     display: none;
   }
 }
@@ -89,4 +89,7 @@
   }
 }
 
+.main-header__logo-image {
+  max-width: none;
+}
 

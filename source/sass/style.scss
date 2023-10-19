@@ -1,20 +1,21 @@
 
 
-
-@import "../sass/blocks/advantages.scss";
-@import "../sass/blocks/main-nav.scss";
-@import "../sass/blocks/hero.scss";
-@import "../sass/global/setup.scss";
-@import "../sass/mixins/media.scss";
-@import "../sass/global/fonts.scss";
-@import "../sass/global/variables.scss";
-@import "../sass/blocks/booking.scss";
-@import "../sass/blocks/page.scss";
-@import "../sass/blocks/catalog.scss";
-@import "../sass/blocks/review.scss";
-@import "../sass/blocks/form.scss";
-@import "../sass/blocks/modal.scss";
-@import "../sass/blocks/advantages-list.scss";
-@import "../sass/blocks/social.scss";
-@import "../sass/blocks/main-header.scss";
+@import "mixins/media";
+@import "mixins/mixins";
+@import "global/variables";
+@import "global/fonts";
+@import "global/setup";
+@import "blocks/main";
+@import "blocks/advantages";
+@import "blocks/main-nav";
+@import "blocks/hero";
+@import "blocks/booking";
+@import "blocks/page";
+@import "blocks/catalog";
+@import "blocks/review";
+@import "blocks/form";
+@import "blocks/modal";
+@import "blocks/advantages-list";
+@import "blocks/social";
+@import "blocks/main-header";
 
