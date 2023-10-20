@@ -1,13 +1,14 @@
-@use "../sass/mixins/media.scss"as m;
+
 
 
 .catalog__title {
   margin-top: 0;
   margin-bottom: 25px;
 
-  @include m.tablet {
+  @include tablet {
     font-size: 30px;
     line-height: 26px;
+    margin-bottom: 32px;
   }
 }
 
@@ -16,9 +17,13 @@
   margin-bottom: 36px;
   width: 280px;
 
-  @include m.tablet {
-    width: 456px;
-    margin-bottom: 67px;
+  @include tablet {
+    width: 445px;
+    margin-bottom: 21px;
+  }
+
+  @include desktop {
+    margin-bottom: 90px;
   }
 }
 
@@ -31,7 +36,7 @@
   left: 0;
   margin-bottom: 25px;
 
-  @include m.tablet {
+  @include tablet {
     border-bottom: none;
     margin: 0;
   }
@@ -40,21 +45,22 @@
 .catalog__list {
 
 
-  @include m.tablet {
+  @include tablet {
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 60px;
   }
 
-  @include m.desktop {
+  @include desktop {
     grid-template-columns: 1fr 1fr 1fr;
+    padding: 0;
   }
 }
 
 .catalog__item-view {
   grid-column: 1/3;
 
-  @include m.desktop {
+  @include desktop {
     grid-column: 1/4;
   }
 }
@@ -62,7 +68,7 @@
 .catalog__item {
   margin: 0;
 
-  @include m.desktop {
+  @include desktop {
     position: relative;
   }
 }
@@ -75,21 +81,21 @@
   font-weight: 700;
   line-height: 21px;
   text-transform: uppercase;
-  margin-top: 10px;
-  margin-bottom: 11px;
+  margin-top: 14px;
+  margin-bottom: 6px;
 
-  @include m.tablet {
+  @include tablet {
     margin: 0;
   }
 
-  @include m.desktop {
+  @include desktop {
     color: #ffffff;
   }
 }
 
 .catalog__description-image-wrapper {
 
-  @include m.tablet {
+  @include tablet {
     display: flex;
     justify-content: space-between;
     background-color: var(--grey);
@@ -97,25 +103,27 @@
     align-items: center;
   }
 
-  @include m.desktop {
+  @include desktop {
     position: absolute;
     background-color: rgba(0, 0, 0, 0.3);
     width: 100%;
     left: 0;
     bottom: 0;
+    padding: 20px 20px 19px 24px;
   }
 }
 
 .catalog__description-image-author {
   display: block;
-  color: #333333;
+  color: rgba(51, 51, 51, 0.3);
   font-family: inherit;
-  font-size: 10px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 700;
-  line-height: 18px;
+  line-height: 21px;
+  text-transform: none;
 
-  @include m.desktop {
+  @include desktop {
     color: #ffffff;
   }
 }
@@ -130,11 +138,11 @@
   text-transform: uppercase;
   margin-left: 5px;
 
-  @include m.tablet {
+  @include tablet {
     margin-left: 9px;
   }
 
-  @include m.desktop {
+  @include desktop {
     color: #ffffff;
   }
 }
@@ -150,18 +158,18 @@
   &::before {
     content: "";
     mask-image: url("../img/sprite.svg#like");
-    width: 23px;
-    height: 21px;
+    width: 32px;
+    height: 32px;
     flex-shrink: 0;
     display: inline-block;
     background-color: rgba(0, 0, 0, 0.3);
 
-    @include m.desktop {
+    @include desktop {
       background-color: #ffffff;
     }
   }
 
-  @include m.tablet {
+  @include tablet {
     background-color: transparent;
     margin: 0;
   }
@@ -173,44 +181,53 @@
   object-fit: cover;
   max-height: 280px;
 
-  @include m.tablet {
+  @include tablet {
     max-height: 400px;
   }
 }
 
 .catalog__item-description-title {
-  margin-bottom: 35px;
+  margin-bottom: 20px;
 
-  @include m.tablet {
-    margin-top: 58px;
+  @include tablet {
+    margin: 0;
+    margin-bottom: 30px;
+    font-size: 30px;
+    line-height: 26px;
   }
 
-  @include m.desktop {
+  @include desktop {
     font-size: 30px;
     line-height: 21px;
+    margin-top: 62px;
+    margin-bottom: 34px;
   }
 }
 
 .catalog__item-description-video {
   margin: 0 auto;
-  margin-bottom: 33px;
+  margin-bottom: 37px;
   width: 266px;
 
-  @include m.tablet {
+  @include tablet {
     width: 445px;
     margin: 0 auto;
-    margin-bottom: 66px;
+    margin-bottom: 90px;
+  }
+
+  @include tablet {
+    margin-bottom: 87px;
   }
 }
 
 .catalog__item-bottom {
   position: relative;
 
-  @include m.tablet {
+  @include tablet {
     grid-column: 1/3;
   }
 
-  @include m.desktop {
+  @include desktop {
     grid-column: 1/4;
   }
 }
@@ -220,14 +237,14 @@
   background-image: url("../img/icons/video-button.png");
   width: 48px;
   height: 54px;
-  top: 243px;
+  top: 234px;
   left: 50%;
   transform: translateX(-50%);
   background-color: transparent;
   border: none;
 
-  @include m.tablet {
-    top: 61%;
+  @include tablet {
+    top: 59%;
   }
 }
 
@@ -235,7 +252,7 @@
   width: 100%;
   height: 177px;
 
-  @include m.tablet {
+  @include tablet {
     height: 500px;
   }
 }

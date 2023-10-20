@@ -1,10 +1,10 @@
-@use "../sass/mixins/media.scss"as m;
+
 
 
 
 .main-nav__wrapper {
 
-  @include m.tablet {
+  @include tablet {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -16,7 +16,7 @@
 @include list;
 
 
-  @include m.tablet {
+  @include tablet {
   display: flex;
   flex-wrap: wrap;
   }
@@ -31,7 +31,7 @@
   &:hover {
     background-color: #669ec0;
 
-    @include m.tablet {
+    @include tablet {
       background-color: transparent;
     }
   }
@@ -39,19 +39,30 @@
   &:active {
     background-color: #5496bd;
 
-    @include m.tablet {
+    @include tablet {
       background-color: transparent;
     }
   }
 
-  @include m.tablet {
+  @include tablet {
     box-shadow: none;
     padding: 18px 27px 17px 28px;
     background-color: transparent;
   }
 
-  @include m.desktop {
+  @include desktop {
     padding: 18px 70px;
+  }
+
+  &--left {
+
+    @include tablet {
+      padding: 18px 47px 17px 50px;
+    }
+
+    @include desktop {
+      padding: 18px 93px 17px 91px;
+    }
   }
 }
 
@@ -65,7 +76,7 @@
   line-height: 26px;
   text-transform: uppercase;
 
-  @include m.tablet {
+  @include tablet {
     color: #000000;
     font-size: 14px;
     line-height: 21px;
@@ -74,7 +85,7 @@
 
 .main-nav__item-link--current {
 
-  @include m.tablet {
+  @include tablet {
     color: #766357;
   }
 }

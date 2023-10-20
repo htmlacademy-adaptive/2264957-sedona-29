@@ -51,10 +51,15 @@
     background-image: url("../img/background/hero-catalog-tablet.jpg");
     height: 290px;
     width: 100%;
+    padding: 95px 45px;
+    margin-bottom: 66px;
   }
 
   @include m.desktop {
     background-image: url("../img/background/hero-desktop.jpg");
+    height: 301px;
+    padding: 102px 45px;
+    margin-bottom: 97px;
   }
 }
 

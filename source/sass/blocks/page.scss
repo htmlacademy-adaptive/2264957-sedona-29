@@ -1,18 +1,29 @@
-@use "../sass/mixins/media.scss"as m;
+
 
 
 .page__footer-wrapper {
   padding: 0 82px 33px 82px;
 
-  @include m.tablet {
+  @include tablet {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 36px 60px;
   }
 
-  @include m.desktop {
+  @include desktop {
     padding: 56px 120px;
+  }
+
+  &--catalog {
+
+    @include tablet {
+      margin-top: 31px;
+    }
+
+    @include desktop {
+      margin-top: 59px;
+    }
   }
 }
 
@@ -23,7 +34,15 @@
   margin-bottom: 30px;
 
 
-  @include m.tablet {
+  @include tablet {
+    margin: 0;
+  }
+}
+
+.page__footer-hash-catalog {
+  margin-top: 28px;
+
+  @include tablet {
     margin: 0;
   }
 }
