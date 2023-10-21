@@ -27,7 +27,7 @@
     <nav class="main-nav main-header__nav">
       <div class="main-nav__wrapper">
         <ul class="main-nav__list">
-          <li class="main-nav__item">
+          <li class="main-nav__item main-nav__item--left">
             <a class="main-nav__item-link main-nav__item-link-main" href="index.html">
               Главная
             </a>
@@ -57,7 +57,7 @@
 
     <h1 class="visually-hidden">Курорт Седона</h1>
     <!-- Отзыв -->
-    <section class="hero hero-catalog">
+    <section class="hero hero-catalog hero-form">
       <h2 class="visually-hidden">Седона</h2>
       <img class="hero__text hero__text-catalog" src="img/pictures/sedona-text.svg" width="229" height="39" alt="Надпись Седона">
     </section>
@@ -162,32 +162,32 @@
 
           <!-- Доболнительная информация чекбокс -->
           <fieldset class="form__about">
-            <div class="form__about-wrapper form__line-mode">
+            <div class="form__about-wrapper form__line-mode form__line-mode--sight">
             <h3 class="form__about-title title-main form__about-title-line">посещенные достопримечательности:</h3>
             </div>
             <ul class="form__about-list form__about-list-sight">
-              <li class="form__about-item form__about-item-control">
+              <li class="form__about-item form__about-item-control form__about-item-control--checkbox">
                 <label class="form__control form__control-sight">
                   <input class="form__control-input visually-hidden" type="checkbox" name="bridge" checked>
                   <span class="form__control-mark"></span>
                   <span class="form__control-label">Мост Дьявола</span>
                 </label>
               </li>
-              <li class="form__about-item form__about-item-control">
+              <li class="form__about-item form__about-item-control form__about-item-control--checkbox">
                 <label class="form__control form__control-sight">
                   <input class="form__control-input visually-hidden" type="checkbox" name="bell" checked>
                   <span class="form__control-mark"></span>
                   <span class="form__control-label">Гора-Колокол</span>
                 </label>
               </li>
-              <li class="form__about-item form__about-item-control">
+              <li class="form__about-item form__about-item-controlform__about-item-control--checkbox ">
                 <label class="form__control form__control-sight">
                   <input class="form__control-input visually-hidden" type="checkbox" name="park" checked>
                   <span class="form__control-mark"></span>
                   <span class="form__control-label">Слайд-парк</span>
                 </label>
               </li>
-              <li class="form__about-item form__about-item-control">
+              <li class="form__about-item form__about-item-control form__about-item-control--checkbox">
                 <label class="form__control form__control-sight">
                   <input class="form__control-input visually-hidden" type="checkbox" name="rocks">
                   <span class="form__control-mark"></span>
@@ -200,7 +200,7 @@
           <!-- Комментарии -->
           <fieldset class="form__about form__about-comment">
             <div class="form__about-wrapper form__line-mode">
-            <h3 class="form__about-title form__about-title-comment form__about-title-line title-main">Опишите свои эмоции:</h3>
+            <h3 class="form__about-title form__about-title--comment form__about-title-line title-main">Опишите свои эмоции:</h3>
             </div>
             <textarea class="form__about-input-comment form__input-all container" type="text" id="fild-about-comment"
               name="fild-about-comment" placeholder="Опишите подробно все свои восторги" required></textarea>
@@ -222,7 +222,7 @@
   <!-- Подвал -->
   <footer class="page__footer">
     <div class="page__footer-wrapper">
-      <p class="page__footer-hash title-main">#visitSEDONA</p>
+      <p class="page__footer-hash page__footer-hash--form title-main">#visitSEDONA</p>
       <div class="page__footer-social social">
         <a class="social__link social__vk" href="#">
           <svg class="social__vk-img" width="24" height="24">

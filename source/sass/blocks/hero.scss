@@ -63,6 +63,13 @@
   }
 }
 
+.hero-form {
+
+  @include desktop {
+  margin-bottom: 113px;
+  }
+}
+
 
 
 .hero__text {

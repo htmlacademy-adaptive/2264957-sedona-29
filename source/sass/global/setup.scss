@@ -64,17 +64,7 @@ a {
 }
 
 
-.page__container {
-  min-width: 320px;
-  max-width: 1200px;
-  margin: 0 auto;
 
-  @include m.desktop {
-    box-shadow: 0px 5px 15px 0px rgba(0, 1, 1, 0.20);
-    background-color: #ffffff;
-  }
-
-}
 
 .container {
   padding: 0 20px;

@@ -1,16 +1,26 @@
-@use "../sass/mixins/media.scss"as m;
+
 
 .review__title {
-  margin-bottom: 24px;
+  margin-bottom: 19px;
+  font-size: 30px;
+  line-height: 26px;
+
+  @include tablet {
+    margin-bottom: 32px;
+  }
 }
 
 .review__description {
   margin-bottom: 28px;
 
-  @include m.tablet {
+  @include tablet {
     width: 435px;
     margin: 0 auto;
     margin-bottom: 108px;
+  }
+
+  @include desktop {
+    margin-bottom: 69px;
   }
 }
 
