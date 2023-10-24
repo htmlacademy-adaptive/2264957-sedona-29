@@ -38,12 +38,20 @@
     transform: translateX(-50%);
   }
 
+
+
   &--blue::after {
     color: #ffffff;
 
     @include desktop {
       top: 124%;
-      width: 150px;
+    }
+  }
+
+  &--blue {
+
+    @include desktop {
+      width: 150px
     }
   }
 
@@ -75,9 +83,18 @@
 
 .advantages__title-bottom {
 
+  &::after {
+
+    @include desktop {
+      top: 65px;
+    }
+  }
+
   @include tablet {
   width: 145px;
   }
+
+
 }
 
 
@@ -239,6 +256,10 @@
 
   &--center {
     width: 234px;
+
+    @include desktop {
+      width: 260px;
+    }
   }
 }
 
@@ -248,5 +269,12 @@
   @include desktop {
     width: 263px;
     margin: 0 auto;
+  }
+
+  &--min {
+
+    @include desktop {
+      width: 233px;
+    }
   }
 }

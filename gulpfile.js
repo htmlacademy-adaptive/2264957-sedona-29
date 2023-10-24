@@ -14,8 +14,8 @@ import { deleteAsync } from 'del';
 
 // Styles
 
-export const styles = (done) => {
-  gulp.src('source/sass/style.scss', { sourcemaps: true })
+export const styles = () => {
+  return  gulp.src('source/sass/style.scss', { sourcemaps: true })
     .pipe(plumber())
     .pipe(sass().on('error', sass.logError))
     .pipe(postcss([
@@ -30,8 +30,8 @@ export const styles = (done) => {
 
 // HTML
 
-const html = (done) => {
-  gulp.src("source/*.html")
+const html = () => {
+  return  gulp.src("source/*.html")
   .pipe(htmlmin({collapseWhitespace: true}))
   .pipe(gulp.dest("build"));
   done()
@@ -39,31 +39,31 @@ const html = (done) => {
 
 // Images
 
-const optimizeImages = (done) => {
-  gulp.src("source/img/**/*.{png,jpg}")
+const optimizeImages = () => {
+  return  gulp.src("source/img/**/*.{png,jpg}")
   .pipe(sguoosh())
   .pipe(gulp.dest('build/img'))
   done()
 }
 
-const copyImages = (done) => {
-  gulp.src("source/img/**/*.{png,jpg}")
+const copyImages = () => {
+  return  gulp.src("source/img/**/*.{png,jpg}")
   .pipe(gulp.dest("build/img"))
   done()
   }
 
 // Scripts
 
-const scripts = (done) => {
-  gulp.src("source/js/*.js")
+const scripts = () => {
+  return  gulp.src("source/js/*.js")
   .pipe(gulp.dest("build/js"))
   done()
   }
 
 // WebP
 
-const createWebp = (done) => {
-  gulp.src("source/img/**/*.{jpg,png}")
+const createWebp = () => {
+  return  gulp.src("source/img/**/*.{jpg,png}")
   .pipe(squoosh({webp: {}
   }))
   .pipe(gulp.dest("build/img"));
@@ -72,15 +72,15 @@ const createWebp = (done) => {
 
  // Svg
 
- const svgTask = (done) => {
-  gulp.src(['source/img/**/*.svg'])
+ const svgTask = () => {
+  return  gulp.src(['source/img/**/*.svg'])
   .pipe(svgo())
   .pipe(gulp.dest("build/img"));
   done()
  }
 
- const sprite = (done) => {
-  gulp.src("source/img/icon/*")
+ const sprite = () => {
+  return  gulp.src("source/img/icon/*")
   .pipe(svgo())
   .pipe(svgstore({
   inlineSvg: true

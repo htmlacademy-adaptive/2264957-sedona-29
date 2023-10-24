@@ -40,6 +40,7 @@
 
   @include desktop {
     padding: 47px 17px;
+    width: 400px;
   }
 }
 
@@ -126,6 +127,13 @@
 
   @include desktop {
     width: 300px;
+  }
+
+  &--min {
+
+    @include desktop {
+      width: 268px;
+    }
   }
 }
 

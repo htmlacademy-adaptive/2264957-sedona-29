@@ -11,11 +11,12 @@
     font-size: 30px;
     line-height: 30px;
     margin-top: 62px;
-    margin-bottom: 32px;
+    margin-bottom: 30px;
   }
 }
 
 .booking__paragraph {
+  margin: 0 auto;
   margin-bottom: 32px;
 
   @include desktop {
