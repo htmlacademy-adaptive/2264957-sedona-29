@@ -21,6 +21,10 @@
     width: 279px;
   }
 
+  @include desktop {
+    width: 300px;
+  }
+
 
   &--radio {
     margin-left: 24px;
@@ -70,6 +74,27 @@
 
   @include desktop {
     margin-bottom: 44px;
+  }
+
+  &--sight {
+
+    @include desktop {
+      margin-bottom: 59px;
+    }
+  }
+
+  &--emotions {
+
+    @include desktop {
+      margin-bottom: 25px;
+    }
+  }
+}
+
+.form__about-wrapper-input {
+
+  @include desktop {
+  padding: 0 95px;
   }
 }
 
@@ -131,7 +156,9 @@
   @include desktop {
     padding: 0;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 64px;
+    gap: 13px;
+    margin-left: 44px;
+    margin-bottom: 73px;
   }
 }
 
@@ -259,7 +286,8 @@
   }
 
   @include desktop {
-    justify-content: space-between;
+    margin-left: 53px;
+    margin-bottom: 75px;
   }
 }
 
@@ -267,17 +295,29 @@
   margin-bottom: 17px;
 
   &--checkbox {
+
+    @include tablet {
     margin-bottom: 0;
+    }
   }
 
   @include desktop {
     padding: 0;
     margin: 0;
   }
+
 }
+
 
 .form__about-item-control-radio {
 
+
+  &:not(:last-child) {
+
+    @include desktop {
+    margin-right: 64px;
+    }
+  }
 
   @include tablet {
     margin-right: 15px;
@@ -286,7 +326,6 @@
 
   @include desktop {
     margin: 0;
-    justify-content: space-between;
   }
 }
 
@@ -309,6 +348,10 @@
     padding-bottom: 92px;
     padding-top: 15px;
   }
+
+  @include desktop {
+    padding-top: 19px;
+  }
 }
 
 .form__button {
@@ -317,6 +360,10 @@
 
   @include tablet {
     width: 324px;
+  }
+
+  @include desktop {
+    width: 384px;
   }
 }
 
@@ -376,6 +423,11 @@
     margin-bottom: 64px;
     margin-top: 48px;
   }
+
+  @include desktop {
+    padding: 0 95px;
+    margin-bottom: 44px;
+  }
 }
 
 .form__about-item-phone {
@@ -387,8 +439,12 @@
     height: 58px;
     background-color: #e6e6e6;
     display: block;
-    right: 0;
+    right: 20px;
     top: 22px;
+
+    @include tablet {
+      right: 0;
+    }
   }
 
   &::after {
@@ -400,8 +456,12 @@
     mask-repeat: no-repeat;
     content: "";
     background-color: #000000;
-    right: 20px;
+    right: 40px;
     top: 40px;
+
+    @include tablet {
+      right: 20px;
+    }
   }
 }
 
@@ -414,8 +474,12 @@
     height: 58px;
     background-color: #e6e6e6;
     display: block;
-    right: 0;
+    right: 20px;
     top: 22px;
+
+    @include tablet {
+      right: 0;
+    }
   }
 
   &::after {
@@ -427,8 +491,12 @@
     mask-repeat: no-repeat;
     content: "";
     background-color: #000000;
-    right: 20px;
+    right: 40px;
     top: 40px;
+
+    @include tablet {
+      right: 20px;
+    }
   }
 }
 

@@ -162,7 +162,7 @@
 
           <!-- Доболнительная информация чекбокс -->
           <fieldset class="form__about">
-            <div class="form__about-wrapper form__line-mode form__line-mode--sight">
+            <div class="form__about-wrapper form__about-wrapper--sight form__line-mode form__line-mode--sight">
             <h3 class="form__about-title title-main form__about-title-line">посещенные достопримечательности:</h3>
             </div>
             <ul class="form__about-list form__about-list-sight">
@@ -180,7 +180,7 @@
                   <span class="form__control-label">Гора-Колокол</span>
                 </label>
               </li>
-              <li class="form__about-item form__about-item-controlform__about-item-control--checkbox ">
+              <li class="form__about-item form__about-item-control form__about-item-control--checkbox ">
                 <label class="form__control form__control-sight">
                   <input class="form__control-input visually-hidden" type="checkbox" name="park" checked>
                   <span class="form__control-mark"></span>
@@ -199,12 +199,13 @@
 
           <!-- Комментарии -->
           <fieldset class="form__about form__about-comment">
-            <div class="form__about-wrapper form__line-mode">
+            <div class="form__about-wrapper form__about-wrapper--emotions form__line-mode">
             <h3 class="form__about-title form__about-title--comment form__about-title-line title-main">Опишите свои эмоции:</h3>
             </div>
+            <div class="form__about-wrapper-input">
             <textarea class="form__about-input-comment form__input-all container" type="text" id="fild-about-comment"
               name="fild-about-comment" placeholder="Опишите подробно все свои восторги" required></textarea>
-
+            </div>
           </fieldset>
 
           <div class="form__about-bottom container">
@@ -255,15 +256,15 @@
   <div class="modal-container">
 
   <div class="modal modal-none">
-    <p class="modal__title title-main">ЧТО-ТО ПОШЛО НЕ ТАК!</p>
+    <p class="modal__title modal__title--none title-main">ЧТО-ТО ПОШЛО НЕ ТАК!</p>
     <p class="modal__description paragraph-main">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-    <button class="modal__button site-button modal__button-none" type="submit">OK</button>
+    <button class="modal__button site-button modal__button--none" type="submit">OK</button>
   </div>
 
   <div class="modal modal-done">
     <div class="modal__wrapper-done">
-    <p class="modal__title title-main">Ваш отзыв отправлен!</p>
-    <p class="modal__description paragraph-main">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В&nbsp;ближайшее время мы опубликуем
+    <p class="modal__title modal__title--done title-main">Ваш отзыв отправлен!</p>
+    <p class="modal__description modal__description--done paragraph-main">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В&nbsp;ближайшее время мы опубликуем
       его на сайте.</p>
   </div>
       <div class="modal__wrapper">

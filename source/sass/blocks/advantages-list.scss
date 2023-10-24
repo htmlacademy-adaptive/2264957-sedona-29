@@ -35,6 +35,7 @@
     justify-content: center;
     align-items: center;
     padding: 60px 33px;
+    width: 256px;
   }
 
   @include desktop {
@@ -119,6 +120,7 @@
   text-align: left;
 
   @include tablet {
+    width: 190px;
     text-align: center;
   }
 

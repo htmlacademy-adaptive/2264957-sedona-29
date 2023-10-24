@@ -1,13 +1,15 @@
-@use "../sass/mixins/media.scss"as m;
-
 .modal-none {
   width: 320px;
   padding: 45px 42px 35px 42px;
-  margin: auto;
   background-color: #fcfcfc;
   display: flex;
   flex-direction: column;
-  display: none;
+
+
+  @include tablet {
+    width: 400px;
+    padding: 50px 47px 49px 47px;
+  }
 }
 
 .modal {
@@ -27,32 +29,77 @@
 }
 
 .modal__title {
-  margin-bottom: 40px;
+  margin: 0 auto;
+  margin-bottom: 24px;
+
+  @include tablet {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  &--none {
+    width: 250px;
+  }
 }
 
 .modal__description {
-  margin-bottom: 20px;
+  margin-bottom: 32px;
+  margin: 0 auto;
+
+  @include tablet {
+    font-size: 14px;
+    line-height: 21px;
+    margin-bottom: 47px;
+  }
+
+  &--done {
+
+    @include tablet {
+      width: 435px;
+      margin-bottom: 32px;
+    }
+  }
 }
 
 .modal__button {
   padding: 16px 43px;
   width: 100%;
-}
+  align-self: center;
+  font-size: 18px;
+  line-height: 26px;
 
-.modal__button-none {
-  width: 180px;
+  @include tablet {
+    font-size: 21px;
+    line-height: 26px;
+  }
+
+  &--none {
+    width: 180px;
+
+    @include tablet {
+      width: 272px;
+    }
+  }
 }
 
 .modal__wrapper {
   padding: 20px 20px;
   background-color: var(--grey);
+
+  @include tablet {
+    padding: 44px 91px;
+  }
 }
 
 .modal__wrapper-done {
-  padding: 39px 39px;
+  padding: 20px 39px;
   background-color: #ffffff;
 }
 
 .modal-done {
   display: none;
+
+  @include tablet {
+    width: 640px;
+  }
 }

@@ -92,7 +92,7 @@
 
     @include tablet {
       padding: 52px 33px 31px 33px;
-      width: 400px;
+      width: 256px;
     }
 
     @include desktop {
@@ -228,6 +228,10 @@
 .advantages__description {
   width: 258px;
   margin: 0 auto;
+
+  @include tablet {
+    width: 190px;
+  }
 
   @include desktop {
     width: 300px;
