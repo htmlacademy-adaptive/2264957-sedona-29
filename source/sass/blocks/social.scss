@@ -1,0 +1,66 @@
+@use "../sass/mixins/media.scss"as m;
+
+.social {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+
+  @include m.tablet {
+    margin: 0;
+  }
+}
+
+.social__link {
+  padding: 12px 12px;
+  background-color: var(--blue);
+  display: block;
+  width: 48px;
+  height: 48px;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+  }
+
+  &:active .social__vk-img {
+    opacity: 0.3;
+  }
+}
+
+.social__link:not(:last-child) {
+  margin-right: 5px;
+}
+
+.social__vk-img {
+  fill: #ffffff;
+}
+
+.page__footer-html-img {
+  vertical-align: middle;
+  fill: #000000;
+}
+
+.page__footer-html {
+
+  display: block;
+  text-align: center;
+
+  &:hover {
+    color: #81b3d2;
+  }
+
+  &:hover .page__footer-html-img {
+    fill: #81b3d2;
+  }
+
+  &:active {
+    color: #b3b3b3;
+  }
+
+  &:active .page__footer-html-img {
+    fill: #b3b3b3;
+  }
+}

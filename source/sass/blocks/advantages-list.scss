@@ -1,0 +1,143 @@
+.advantages-list {
+  @include list;
+  margin-top: 31px;
+  margin-bottom: 46px;
+  padding: 0 18px 0 65px;
+
+  @include tablet {
+    margin: 0;
+    padding: 0;
+  }
+
+  @include desktop {
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+}
+
+.advantages-list__item-title {
+  position: relative;
+  text-align: left;
+  margin-bottom: 16px;
+
+  @include tablet {
+    text-align: center;
+    margin-bottom: 23px;
+    margin-top: 98px;
+  }
+
+  @include desktop {
+    margin-top: 123px;
+  }
+}
+
+.advantages-list__item {
+
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 33px;
+    width: 256px;
+  }
+
+  @include desktop {
+    padding: 47px 17px;
+    width: 400px;
+  }
+}
+
+.advantages-list__item:not(:last-child) {
+  margin-bottom: 33px;
+
+  @include tablet {
+    margin: 0;
+  }
+}
+
+
+.advantages-list__item-title::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: -8px;
+  left: -47px;
+
+  @include tablet {
+    margin-bottom: 26px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -98px
+  }
+}
+
+.advantages-list__item-title-house::before {
+  background-image: url("../img/sprite.svg#house");
+  width: 39px;
+  height: 39px;
+
+  @include tablet {
+    width: 74px;
+    height: 74px;
+  }
+
+  @include desktop {
+    width: 79px;
+    height: 72px;
+  }
+}
+
+.advantages-list__item-title-food::before {
+  background-image: url("../img/sprite.svg#burger");
+  width: 40px;
+  height: 39px;
+
+  @include tablet {
+    width: 74px;
+    height: 74px;
+  }
+
+  @include desktop {
+    width: 73px;
+    height: 72px;
+  }
+}
+
+.advantages-list__item-title-present::before {
+  background-image: url("../img/sprite.svg#present");
+  width: 40px;
+  height: 39px;
+
+  @include tablet {
+    width: 74px;
+    height: 74px;
+    width: 100%;
+  }
+
+  @include desktop {
+    width: 77px;
+    height: 72px;
+    width: 100%;
+  }
+}
+
+.advantages-list__item-description {
+  text-align: left;
+
+  @include tablet {
+    width: 190px;
+    text-align: center;
+  }
+
+  @include desktop {
+    width: 300px;
+  }
+
+  &--min {
+
+    @include desktop {
+      width: 268px;
+    }
+  }
+}

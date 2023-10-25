@@ -1,1 +1,21 @@
-// Начните писать стили здесь
+
+
+@import "mixins/media";
+@import "mixins/mixins";
+@import "global/variables";
+@import "global/fonts";
+@import "global/setup";
+@import "blocks/main";
+@import "blocks/advantages";
+@import "blocks/main-nav";
+@import "blocks/hero";
+@import "blocks/booking";
+@import "blocks/page";
+@import "blocks/catalog";
+@import "blocks/review";
+@import "blocks/form";
+@import "blocks/modal";
+@import "blocks/advantages-list";
+@import "blocks/social";
+@import "blocks/main-header";
+

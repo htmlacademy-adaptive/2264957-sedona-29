@@ -1,0 +1,262 @@
+
+
+
+.catalog__title {
+  margin-top: 0;
+  margin-bottom: 25px;
+
+  @include tablet {
+    font-size: 30px;
+    line-height: 26px;
+    margin-bottom: 32px;
+  }
+}
+
+.catalog__description {
+  margin: 0 auto;
+  margin-bottom: 36px;
+  width: 280px;
+
+  @include tablet {
+    width: 445px;
+    margin-bottom: 21px;
+  }
+
+  @include desktop {
+    margin-bottom: 90px;
+  }
+}
+
+.catalog__item::before {
+  content: "";
+  display: block;
+  border-bottom: 1px solid #e5e5e5;
+  width: 100%;
+  top: 0;
+  left: 0;
+  margin-bottom: 25px;
+
+  @include tablet {
+    border-bottom: none;
+    margin: 0;
+  }
+}
+
+.catalog__list {
+
+
+  @include tablet {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 60px;
+  }
+
+  @include desktop {
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0;
+  }
+}
+
+.catalog__item-view {
+  grid-column: 1/3;
+
+  @include desktop {
+    grid-column: 1/4;
+  }
+}
+
+.catalog__item {
+  margin: 0;
+
+  @include desktop {
+    position: relative;
+  }
+}
+
+.catalog__description-image {
+  color: #000000;
+  font-family: inherit;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 21px;
+  text-transform: uppercase;
+  margin-top: 14px;
+  margin-bottom: 6px;
+
+  @include tablet {
+    margin: 0;
+  }
+
+  @include desktop {
+    color: #ffffff;
+  }
+}
+
+.catalog__description-image-wrapper {
+
+  @include tablet {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--grey);
+    padding: 22px 20px 15px 20px;
+    align-items: center;
+  }
+
+  @include desktop {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    padding: 20px 20px 19px 24px;
+  }
+}
+
+.catalog__description-image-author {
+  display: block;
+  color: rgba(51, 51, 51, 0.3);
+  font-family: inherit;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 21px;
+  text-transform: none;
+
+  @include desktop {
+    color: #ffffff;
+  }
+}
+
+.catalog__item-button-quantity {
+  color: #000000;
+  font-family: inherit;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 21px;
+  text-transform: uppercase;
+  margin-left: 5px;
+
+  @include tablet {
+    margin-left: 9px;
+  }
+
+  @include desktop {
+    color: #ffffff;
+  }
+}
+
+.catalog__item-button {
+  border: none;
+  background-color: #ffffff;
+  margin-bottom: 25px;
+  padding: 0;
+  display: flex;
+  align-items: flex-end;
+
+  &::before {
+    content: "";
+    mask-image: url("../img/sprite.svg#like");
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.3);
+
+    @include desktop {
+      background-color: #ffffff;
+    }
+  }
+
+  @include tablet {
+    background-color: transparent;
+    margin: 0;
+  }
+}
+
+.catalog__item-picture {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  max-height: 280px;
+
+  @include tablet {
+    max-height: 400px;
+  }
+}
+
+.catalog__item-description-title {
+  margin-bottom: 20px;
+
+  @include tablet {
+    margin: 0;
+    margin-bottom: 30px;
+    font-size: 30px;
+    line-height: 26px;
+  }
+
+  @include desktop {
+    font-size: 30px;
+    line-height: 21px;
+    margin-top: 62px;
+    margin-bottom: 34px;
+  }
+}
+
+.catalog__item-description-video {
+  margin: 0 auto;
+  margin-bottom: 37px;
+  width: 266px;
+
+  @include tablet {
+    width: 445px;
+    margin: 0 auto;
+    margin-bottom: 90px;
+  }
+
+  @include tablet {
+    margin-bottom: 87px;
+  }
+}
+
+.catalog__item-bottom {
+  position: relative;
+
+  @include tablet {
+    grid-column: 1/3;
+  }
+
+  @include desktop {
+    grid-column: 1/4;
+  }
+}
+
+.catalog__item-video-button {
+  position: absolute;
+  background-image: url("../img/icons/video-button.png");
+  width: 48px;
+  height: 54px;
+  top: 234px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: transparent;
+  border: none;
+
+  @include tablet {
+    top: 59%;
+  }
+}
+
+.catalog__item-video {
+  width: 100%;
+  height: 177px;
+
+  @include tablet {
+    height: 500px;
+  }
+}
+
+.catalog__item-wrapper-image {
+  width: 100%;
+}
