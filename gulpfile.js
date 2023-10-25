@@ -41,7 +41,7 @@ const html = () => {
 
 const optimizeImages = () => {
   return  gulp.src("source/img/**/*.{png,jpg}")
-  .pipe(sguoosh())
+  .pipe(squoosh())
   .pipe(gulp.dest('build/img'))
   done()
 }
@@ -96,6 +96,7 @@ const copy = (done) => {
   gulp.src([
   "source/fonts/**/*.{woff2,woff}",
   "source/*.ico",
+  "source/manifest.webmanifest",
   "!source/img/icons/*.svg",
   ], {
   base: "source"
@@ -137,9 +138,7 @@ const reload = (done) => {
 
 const watcher = (done) => {
   gulp.watch('source/sass/**/*.scss', gulp.series(styles));
-  gulp.watch('source/js/main.js', gulp.series(scripts));
-  gulp.watch('source/js/map.js', gulp.series(scripts));
-  gulp.watch('source/js/slider.js', gulp.series(scripts));
+  gulp.watch('source/js/*', gulp.series(scripts));
   gulp.watch('source/*.html', gulp.series(html, reload));
   done()
 }

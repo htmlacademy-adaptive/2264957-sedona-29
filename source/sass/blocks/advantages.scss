@@ -8,6 +8,7 @@
   @include tablet {
     font-size: 21px;
     line-height: 26px;
+    margin-bottom: 30px;
   }
 
   @include desktop {
@@ -33,7 +34,7 @@
     text-transform: uppercase;
     counter-increment: advantages;
     content: "— №"counter(advantages)" —";
-    top: 143%;
+    top: 128%;
     left: 50%;
     transform: translateX(-50%);
   }
@@ -43,6 +44,10 @@
   &--blue::after {
     color: #ffffff;
 
+    @include tablet {
+      top: 130%;
+    }
+
     @include desktop {
       top: 124%;
     }
@@ -50,7 +55,7 @@
 
   &--blue {
 
-    @include desktop {
+    @include tablet {
       width: 150px
     }
   }
@@ -109,7 +114,7 @@
 
     @include tablet {
       padding: 52px 33px 31px 33px;
-      width: 256px;
+      width: 33.33%;
     }
 
     @include desktop {
@@ -129,6 +134,10 @@
 
   &--top {
     padding: 54px 18px 40px 18px;
+
+    @include tablet {
+      padding: 52px 18px 30px 18px;
+    }
   }
 
   &--top::before {
@@ -158,9 +167,13 @@
 
   @include tablet {
     margin: 0;
-    margin-top: 45px;
+    margin-top: 56px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  @include desktop {
+    margin-top: 45px;
   }
 }
 
@@ -187,7 +200,7 @@
     padding: 25px 0;
 
     @include tablet {
-      padding: 41px 33px 63px 33px;
+      padding: 41px 33px 41px 33px;
     }
 
     @include desktop {
@@ -256,6 +269,10 @@
 
   &--center {
     width: 234px;
+
+    @include tablet {
+      width: 175px;
+    }
 
     @include desktop {
       width: 260px;

@@ -9,8 +9,6 @@ body {
   line-height: 21px;
   color: #000000;
   background-color: #ffffff;
-  display: flex;
-  flex-direction: column;
 
   @include m.desktop {
     background-color: #f2f2f2;
