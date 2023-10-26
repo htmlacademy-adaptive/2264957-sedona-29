@@ -48,6 +48,7 @@
     box-shadow: none;
     padding: 18px 27px 17px 28px;
     background-color: transparent;
+
   }
 
   @include desktop {
@@ -64,6 +65,23 @@
       padding: 18px 93px 17px 91px;
     }
   }
+
+  &:hover .main-nav__item-link {
+
+    @include tablet {
+    color: #81b3d2;
+  }
+
+  }
+
+  &:active .main-nav__item-link {
+
+    @include tablet {
+    color: #b3b3b3;
+    }
+
+  }
+
 }
 
 .main-nav__item-link {
@@ -81,6 +99,7 @@
     font-size: 14px;
     line-height: 21px;
   }
+
 }
 
 .main-nav__item-link--current {
@@ -90,7 +109,13 @@
   }
 }
 
+.menu-nav_opened {
+  display: block;
+}
 
 
-
-
+.no-js {
+  .main-header__button {
+    display: none;
+  }
+}

@@ -46,6 +46,7 @@
     padding: 47px 17px;
     width: 400px;
   }
+
 }
 
 .advantages-list__item:not(:last-child) {
@@ -110,15 +111,38 @@
   height: 39px;
 
   @include tablet {
-    width: 74px;
-    height: 74px;
-    width: 100%;
+    background-image: url("../../img/sprite.svg#present-tablet");
+    width: 67px;
+    height: 75px;
   }
 
   @include desktop {
+    background-image: url("../../img/sprite.svg#present-desktop");
     width: 77px;
-    height: 72px;
+    height: 75px;
     width: 100%;
+  }
+}
+
+.advantages-list__item-title-present {
+
+  @include tablet {
+    margin-top: 87px;
+  }
+
+  @include desktop {
+    margin-top: 123px;
+  }
+
+  &::before {
+
+    @include tablet {
+    top: -90px;
+    }
+
+    @include desktop {
+      top: -100px;
+    }
   }
 }
 
@@ -138,6 +162,12 @@
 
     @include desktop {
       width: 268px;
+    }
+  }
+
+  &--present {
+    @include tablet {
+      display: block;
     }
   }
 }

@@ -1,9 +1,7 @@
-
-
 .form {
 
   @include tablet {
-  padding: 0 60px;
+    padding: 0 60px;
   }
 
   @include desktop {
@@ -50,6 +48,36 @@
   }
 }
 
+.form__about {
+
+    position: relative;
+    margin: 0;
+    border: none;
+    padding: 0;
+
+  &--left {
+
+    @include tablet {
+      padding-right: 28px;
+    }
+
+    @include desktop {
+      padding-right: 0;
+    }
+  }
+
+  &--right {
+
+    @include tablet {
+    padding-left: 28px;
+    }
+
+    @include desktop {
+      padding-left: 0;
+    }
+  }
+}
+
 .form__about::before {
   content: "";
   display: block;
@@ -78,6 +106,10 @@
 
   &--sight {
 
+    @include tablet {
+      margin-bottom: 41px;
+    }
+
     @include desktop {
       margin-bottom: 59px;
     }
@@ -94,16 +126,11 @@
 .form__about-wrapper-input {
 
   @include desktop {
-  padding: 0 95px;
+    padding: 0 95px;
   }
 }
 
-.form__about {
-  position: relative;
-  margin: 0;
-  border: none;
-  padding: 0;
-}
+
 
 .form__about-item-name {
   color: #333333;
@@ -130,14 +157,6 @@
 
   &--contacts {
     margin-bottom: 32px;
-
-    @include tablet {
-      margin-left: 14px;
-    }
-
-    @include desktop {
-      margin-left: 0;
-    }
   }
 }
 
@@ -145,12 +164,12 @@
   margin-bottom: 22px;
 
   @include tablet {
-  padding: 0 85px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin-bottom: 28px;
-  column-gap: 31px;
-  row-gap: 17px;
+    padding: 0 85px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 28px;
+    column-gap: 31px;
+    row-gap: 17px;
   }
 
   @include desktop {
@@ -158,7 +177,7 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 13px;
     margin-left: 44px;
-    margin-bottom: 73px;
+    margin-bottom: 85px;
   }
 }
 
@@ -223,7 +242,7 @@
     background-color: #e5e5e5;
   }
 
-  &:active .form__control-mark{
+  &:active .form__control-mark {
     background-color: #d5d5d5;
   }
 }
@@ -280,9 +299,9 @@
   margin-bottom: 25px;
 
   @include tablet {
-  display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 31px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 31px;
   }
 
   @include desktop {
@@ -297,7 +316,7 @@
   &--checkbox {
 
     @include tablet {
-    margin-bottom: 0;
+      margin-bottom: 0;
     }
   }
 
@@ -315,7 +334,7 @@
   &:not(:last-child) {
 
     @include desktop {
-    margin-right: 64px;
+      margin-right: 64px;
     }
   }
 
@@ -390,7 +409,6 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-bottom: 47px;
-    gap: 30px;
   }
 
   @include desktop {
@@ -401,14 +419,14 @@
   &::before {
 
     @include tablet {
-    content: "";
-    position: absolute;
-    border-left: 1px solid #dbdbdb;
-    height: 100%;
-    left: 50%;
-    top: 0;
-    transform: translateX(-50%);
-    display: block;
+      content: "";
+      position: absolute;
+      border-left: 1px solid #dbdbdb;
+      height: 100%;
+      left: 50%;
+      top: 0;
+      transform: translateX(-50%);
+      display: block;
     }
   }
 }
@@ -426,7 +444,7 @@
 
   @include desktop {
     padding: 0 95px;
-    margin-bottom: 44px;
+    margin-bottom: 65px;
   }
 }
 
@@ -534,10 +552,10 @@
 .form__line-mode::after {
 
   @include tablet {
-  content: "";
-  height: 7px;
-  width: 10px;
-  border-bottom: 2px solid #dbdbdb;
-  flex-grow: 1;
+    content: "";
+    height: 7px;
+    width: 10px;
+    border-bottom: 2px solid #dbdbdb;
+    flex-grow: 1;
   }
 }

@@ -197,7 +197,7 @@
 
   &--bottom {
     background-color: #eeeeee;
-    padding: 25px 0;
+    padding: 25px 20px;
 
     @include tablet {
       padding: 41px 33px 41px 33px;
@@ -205,6 +205,20 @@
 
     @include desktop {
       padding: 52px 50px;
+    }
+  }
+
+  &--bottom:not(:last-child):after {
+    display: block;
+    position: absolute;
+    content: "";
+    border-bottom: 1px solid #d6d6d6;
+    bottom: 0;
+    left: 20px;
+    width: 88%;
+
+    @include tablet {
+      border-bottom: none;
     }
   }
 

@@ -38,29 +38,3 @@
   fill: #ffffff;
 }
 
-.page__footer-html-img {
-  vertical-align: middle;
-  fill: #000000;
-}
-
-.page__footer-html {
-
-  display: block;
-  text-align: center;
-
-  &:hover {
-    color: #81b3d2;
-  }
-
-  &:hover .page__footer-html-img {
-    fill: #81b3d2;
-  }
-
-  &:active {
-    color: #b3b3b3;
-  }
-
-  &:active .page__footer-html-img {
-    fill: #b3b3b3;
-  }
-}

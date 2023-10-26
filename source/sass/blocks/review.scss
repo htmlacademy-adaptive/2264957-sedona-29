@@ -1,12 +1,15 @@
-
-
 .review__title {
-  margin-bottom: 19px;
+  margin-bottom: 23px;
 
 
   @include tablet {
-    margin-bottom: 32px;
+    margin-bottom: 19px;
+    font-size: 30px;
+    line-height: 26px;
+  }
 
+  @include desktop {
+    margin-bottom: 33px;
   }
 }
 
@@ -23,5 +26,3 @@
     margin-bottom: 69px;
   }
 }
-
-
